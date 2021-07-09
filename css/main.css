@@ -1,0 +1,151 @@
+/* Custom Umum */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Top Navigasi */
+nav{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mobile-nav{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 25px;
+    background-color: #424874;
+}
+
+.mobile-nav a{
+    color: #DCD6F7;
+}
+
+.logo{
+    flex: 50%;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.user{
+    flex: 50%;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+/* Body Content */
+.container{
+    height: 1000px;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.container a{
+    color: #424874;
+}
+
+.row-menu{
+    display: flex;
+    text-align: center;
+}
+
+.main-menu{
+    flex-grow: 1;
+
+    padding: 25px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83); 
+    box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
+    -moz-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
+}
+
+/* Bottom Menu */
+footer{
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bottom-menu{
+    width: 40%;
+    margin: 15px auto;
+    display: flex;
+    font-size: 25px;
+    background-color: #fff;
+    padding: 10px 0;
+    
+    margin-bottom: 10px;
+    border-radius: 50px;
+
+    -webkit-box-shadow: 0px -6px 14px -10px rgba(132,132,132,0.83); 
+    box-shadow: 0px -6px 14px -10px rgba(132,132,132,0.83);
+    -moz-box-shadow: 0px -6px 14px -10px rgba(132,132,132,0.83);
+}
+
+.bottom-menu a{
+    color: #424874;
+}
+
+.menu{
+    margin: 0 auto;
+}
+
+/* Ukuran Smartphone */
+@media screen and (max-width: 480px) {
+    .container{
+        height: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 15%;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Ukuran Tab */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .container{
+        height: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 15%;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
