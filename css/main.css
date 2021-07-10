@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-color: #dddee9;
+}
+
 /* Top Navigasi */
 nav{
     position: fixed;
@@ -78,6 +82,76 @@ nav{
     -moz-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
 }
 
+.row-content{
+    width: 100%;
+}
+
+/* Component Content */
+.content{
+    padding: 0px 0px 20px 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #DCD6F7;
+    margin-bottom: 10px;
+}
+
+.line{
+    background-color: #424874;
+    height: 10px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0;
+}
+
+.bungkus-content{
+    padding: 10px 20px 10px 20px;
+}
+
+.judul{
+    margin-bottom: 15px;
+}
+
+.bungkus-content p{
+    font-size: 15px;
+}
+
+input[type=text]{
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #dddee9;
+    outline: none;
+    padding: 10px;
+}
+
+input[type=text]:hover{
+    border-bottom: 1px solid #424874;
+}
+
+input[type=text]:focus {
+    border-bottom: 1px solid #424874;
+}
+
+.jawab-singkat{
+    width: 50%;
+}
+
+textarea{
+    font-size: 14px;
+    border: 1px solid #dddee9;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea:hover{
+    border: 1px solid #424874;
+}
+
+textarea:focus{
+    border: 1px solid #424874;
+}
+
 /* Bottom Menu */
 footer{
     position: fixed;
@@ -126,7 +200,16 @@ footer{
 
     .bottom-menu{
         width: 100%;
-        margin: 0 auto;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
     }
 }
 
@@ -146,6 +229,12 @@ footer{
 
     .bottom-menu{
         width: 80%;
-        margin: 0 auto;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
