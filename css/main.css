@@ -65,8 +65,9 @@ nav{
 }
 
 .row-menu{
-    display: flex;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .main-menu{
@@ -184,13 +185,23 @@ footer{
     margin: 0 auto;
 }
 
-/* Ukuran Smartphone */
-@media screen and (max-width: 480px) {
+/* Ukuran Smartphone S */
+@media screen and (max-width: 320px) {
+    .mobile-nav{
+        font-size: 20px;
+    }
+
     .container{
         height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 15%;
+        padding-top: 16%;
+        font-size: 12px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
     }
 
     .mobile-nav{
@@ -201,6 +212,7 @@ footer{
     .bottom-menu{
         width: 100%;
         margin: 15px auto;
+        font-size: 20px;
     }
 
     /* Component Judul */
@@ -213,13 +225,95 @@ footer{
     }
 }
 
-/* Ukuran Tab */
-@media screen and (max-width: 768px) and (min-width: 481px) {
+/* Ukuran Smartphone M */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    .mobile-nav{
+        font-size: 20px;
+    }
+
     .container{
         height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 15%;
+        padding-top: 14%;
+        font-size: 12px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+}
+
+/* Ukuran Smartphone L */
+@media screen and (max-width: 425px) and (min-width: 376px) {
+    .mobile-nav{
+        font-size: 25px;
+    }
+
+    .container{
+        height: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 14%;
+        font-size: 15px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 25px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+}
+
+
+
+/* Ukuran Tab */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .container{
+        height: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 8%;
     }
 
     .mobile-nav{
@@ -229,6 +323,49 @@ footer{
 
     .bottom-menu{
         width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Ukuran 1040 */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container{
+        height: 1000px;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 8%;
+    }
+
+    .mobile-nav{
+        width: 50%;
+    }
+
+    .bottom-menu{
+        width: 50%;
+    }
+}
+
+/* Ukuran 4K */
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+    .container{
+        margin: 0 auto;
+        padding-top: 3%;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        font-size: 35px;
         margin: 15px auto;
     }
 
