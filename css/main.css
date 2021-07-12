@@ -15,13 +15,17 @@ a{
     text-decoration: none;
 }
 
+.text-center{
+    text-align: center;
+}
+
 body{
     background-color: #dddee9;
 }
 
 /* Top Navigasi */
 nav{
-    position: fixed;
+    position: sticky;
     top: 0;
     overflow: hidden;
     width: 100%;
@@ -53,11 +57,11 @@ nav{
 
 /* Body Content */
 .container{
-    height: 1000px;
     width: 40%;
     margin: 0 auto;
-    padding-top: 5%;
     font-size: 20px;
+    overflow: hidden;
+    min-height: 2000px;
 }
 
 .container a{
@@ -85,6 +89,7 @@ nav{
 
 .row-content{
     width: 100%;
+    margin-top: 10px;
 }
 
 /* Component Content */
@@ -94,6 +99,7 @@ nav{
     background-color: #ffffff;
     border: 1px solid #DCD6F7;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .line{
@@ -115,6 +121,7 @@ nav{
     font-size: 15px;
 }
 
+/* Input Text */
 input[type=text]{
     font-size: 14px;
     border-top: none;
@@ -131,6 +138,91 @@ input[type=text]:hover{
 
 input[type=text]:focus {
     border-bottom: 1px solid #424874;
+}
+
+/* Input Radio */
+input[type=radio]{
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+/* Input Checkbox */
+input[type=checkbox]{
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+/* Form Group */
+.form_group label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.form_group input{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.form_group input:hover{
+    border-color: 1px solid #424874;
+    padding-left: 20px;
+}
+
+.form_group input:focus{
+    padding-left: 20px;
+}
+
+/* Dropdown */
+.dropdown{
+    padding: 5px;
+}
+
+.dropdown option{
+    padding: 10px;
+}
+
+/* Btn Reset */
+button.buttonReset{
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(179, 179, 179);
+    padding: 5px;
+    float: right;
+}
+
+button.buttonReset:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+}
+
+/* Pilihan Ganda v2 */
+.pilihan-gandav2{
+    width: 100%;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+.pilihan-gandav2 tr{
+    border-bottom: 5px solid #fff;
+}
+
+.pilihan-gandav2 th{
+    font-weight: normal;
+    padding: 5px;
+}
+
+.pilihan-gandav2 tr td{
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
+}
+
+.pilihan-gandav2 tr td input{
+    margin: auto;
 }
 
 .jawab-singkat{
@@ -155,10 +247,10 @@ textarea:focus{
 
 /* Bottom Menu */
 footer{
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
 }
 
 .bottom-menu{
@@ -185,17 +277,52 @@ footer{
     margin: 0 auto;
 }
 
+/* Ukuran Smartphone XS */
+@media screen and (max-width: 280px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 12px;
+    }
+
+    .main-menu{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+}
+
 /* Ukuran Smartphone S */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 281px) {
     .mobile-nav{
         font-size: 20px;
     }
 
     .container{
-        height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 16%;
+        min-height: 2000px;
         font-size: 12px;
     }
 
@@ -232,10 +359,9 @@ footer{
     }
 
     .container{
-        height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 14%;
+        min-height: 2000px;
         font-size: 12px;
     }
 
@@ -266,16 +392,15 @@ footer{
 }
 
 /* Ukuran Smartphone L */
-@media screen and (max-width: 425px) and (min-width: 376px) {
+@media screen and (max-width: 480px) and (min-width: 376px) {
     .mobile-nav{
         font-size: 25px;
     }
 
     .container{
-        height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 14%;
+        min-height: 2000px;
         font-size: 15px;
     }
 
@@ -308,12 +433,11 @@ footer{
 
 
 /* Ukuran Tab */
-@media screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (max-width: 800px) and (min-width: 481px) {
     .container{
-        height: 1000px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 8%;
+        min-height: 2000px;
     }
 
     .mobile-nav{
@@ -334,12 +458,11 @@ footer{
 }
 
 /* Ukuran 1040 */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 801px) {
     .container{
-        height: 1000px;
         width: 50%;
         margin: 0 auto;
-        padding-top: 8%;
+        min-height: 2000px;
     }
 
     .mobile-nav{
@@ -355,7 +478,7 @@ footer{
 @media screen and (max-width: 2560px) and (min-width: 1441px) {
     .container{
         margin: 0 auto;
-        padding-top: 3%;
+        min-height: 2000px;
         font-size: 30px;
     }
 

@@ -25,6 +25,7 @@
     <div class="container">
         <!-- Content -->
         <div class="row-content">
+
             <!-- Component JUDUL -->
             <div class="content">
                 <div class="line"></div>
@@ -52,7 +53,180 @@
                 </div>
             </div>
 
-            <p>Tes Update</p>
+            <!-- Component Pilihan Ganda 1-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <form>
+                        <p class="judul">Pertanyaan Pilihan Ganda</p>
+                        
+                        <p>
+                            <input type="radio" name="pilih" id="pilih1">
+                            <label for="pilih1">Opsi 1</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="pilih" id="pilih2">
+                            <label for="pilih2">Opsi 2</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="pilih" id="pilih3">
+                            <label for="pilih3">Opsi 3</label>
+                        </p>
+                        
+                        <button type="reset" id="batalRadio" class="buttonReset">Batalkan Pilihan</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Component Pilihan Ganda 2-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <form>
+                        <table class="pilihan-gandav2">
+                            <tr class="text-center">
+                                <th></th>
+                                <th>Kolom 1</th>
+                                <th>Kolom 2</th>
+                            </tr>
+                            <tr>
+                                <td>Baris 1</td>
+                                <td class="text-center"><input type="radio" name="rd-pilih-1"></td>
+                                <td class="text-center"><input type="radio" name="rd-pilih-1"></td>
+                            </tr>
+                            <tr>
+                                <td>Baris 2</td>
+                                <td class="text-center"><input type="radio" name="rd-pilih-2"></td>
+                                <td class="text-center"><input type="radio" name="rd-pilih-2"></td>
+                            </tr>
+                        </table>
+                        
+                        <button type="reset" id="batalRadio-2" class="buttonReset">Batalkan Pilihan</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Component Kotak Centang -->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <p>
+                        <input type="checkbox" name="cek" id="cek1">
+                        <label for="cek1">
+                            Opsi 1
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="cek" id="cek2">
+                        <label for="cek2">
+                            Opsi 2
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="cek" id="cek3">
+                        <label for="cek3">
+                            Opsi 3
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="cek" id="ck_other">
+                        <label for="ck_other">
+                            Yang Lain :
+                        </label>
+                        <input type="text" id="input_other">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Component Kotak Centang v2-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <table class="pilihan-gandav2">
+                        <tr class="text-center">
+                            <th></th>
+                            <th>Kolom 1</th>
+                            <th>Kolom 2</th>
+                        </tr>
+                        <tr>
+                            <td>Baris 1</td>
+                            <td class="text-center"><input type="checkbox" name="ck-pilih-1"></td>
+                            <td class="text-center"><input type="checkbox" name="ck-pilih-1"></td>
+                        </tr>
+                        <tr>
+                            <td>Baris 2</td>
+                            <td class="text-center"><input type="checkbox" name="ck-pilih-2"></td>
+                            <td class="text-center"><input type="checkbox" name="ck-pilih-2"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Componen Tanggal-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <div class="form_group">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" id="tanggal">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componen Waktu-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <div class="form_group">
+                        <label for="waktu">Waktu</label>
+                        <input type="time" id="waktu">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Rating-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <form>
+                        <table class="pilihan-gandav2">
+                            <tr class="text-center">
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><input type="radio" name="rd-rating"></td>
+                                <td class="text-center"><input type="radio" name="rd-rating"></td>
+                                <td class="text-center"><input type="radio" name="rd-rating"></td>
+                                <td class="text-center"><input type="radio" name="rd-rating"></td>
+                                <td class="text-center"><input type="radio" name="rd-rating"></td>
+                            </tr>
+                        </table>
+                    
+                        <button type="reset" id="batalRating" class="buttonReset">Batalkan Pilihan</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Component Drop Down-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content">
+                    <p class="judul">Pilih Data dibawah ini</p>
+                    <select name="sl" id="sl" class="dropdown">
+                        <option value="Opsi 1">Opsi 1</option>
+                        <option value="Opsi 2">Opsi 2</option>
+                        <option value="Opsi 3">Opsi 3</option>
+                        <option value="Opsi 4">Opsi 4</option>
+                    </select>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -67,6 +241,6 @@
     </footer>
     
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
