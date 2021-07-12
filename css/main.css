@@ -315,10 +315,6 @@ footer{
 
 /* Ukuran Smartphone S */
 @media screen and (max-width: 320px) and (min-width: 281px) {
-    .mobile-nav{
-        font-size: 20px;
-    }
-
     .container{
         width: 100%;
         margin: 0 auto;
@@ -332,6 +328,7 @@ footer{
     }
 
     .mobile-nav{
+        font-size: 20px;
         width: 100%;
         margin: 0 auto;
     }
@@ -354,10 +351,6 @@ footer{
 
 /* Ukuran Smartphone M */
 @media screen and (max-width: 375px) and (min-width: 321px) {
-    .mobile-nav{
-        font-size: 20px;
-    }
-
     .container{
         width: 100%;
         margin: 0 auto;
@@ -371,6 +364,7 @@ footer{
     }
 
     .mobile-nav{
+        font-size: 20px;
         width: 100%;
         margin: 0 auto;
     }
@@ -393,10 +387,6 @@ footer{
 
 /* Ukuran Smartphone L */
 @media screen and (max-width: 480px) and (min-width: 376px) {
-    .mobile-nav{
-        font-size: 25px;
-    }
-
     .container{
         width: 100%;
         margin: 0 auto;
@@ -410,6 +400,7 @@ footer{
     }
 
     .mobile-nav{
+        font-size: 25px;
         width: 100%;
         margin: 0 auto;
     }
@@ -457,8 +448,28 @@ footer{
     }
 }
 
+/* Ukuran Tab 2 */
+@media screen and (max-width: 950px) and (min-width: 801px){
+    .mobile-nav{
+        font-size: 20px;
+    }
+
+    .container{
+        font-size: 15px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 8px;
+    }
+
+    .bottom-menu{
+        font-size: 20px;
+    }
+}
+
 /* Ukuran 1040 */
-@media screen and (max-width: 1024px) and (min-width: 801px) {
+@media screen and (max-width: 1024px) and (min-width: 951px) {
     .container{
         width: 50%;
         margin: 0 auto;
