@@ -20,7 +20,7 @@ a{
 }
 
 body{
-    background-color: #dddee9;
+    background-color: #F9F9F9
 }
 
 /* Input Text */
@@ -265,6 +265,22 @@ nav{
     -moz-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
 }
 
+.main-menu p{
+    font-size: 10px;
+}
+
+.menu-label{
+    word-wrap: break-word;
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.main-menu i{
+    font-size: 50px;
+}
+
 .row-content{
     width: 100%;
     margin-top: 10px;
@@ -299,6 +315,164 @@ nav{
     font-size: 15px;
 }
 
+.bungkus-content label{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bungkus-content span{
+    font-size: 15px;
+}
+
+/* STYLE EDIT */
+.edit input.text{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit .pratinjau{
+    margin: 10px 0px;
+    border-bottom-style: dashed;
+    border: none;
+    padding: 10px;
+}
+
+.edit .pratinjau:hover{
+    border-color: #dddee9;
+
+}
+
+.edit-group{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.edit-group span{
+    position: absolute;
+    top: 25%;
+}
+
+.edit-group input[type=radio]{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+}
+
+.edit-group input[type=checkbox]{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+}
+
+.edit-group button{
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.edit-group button:hover{
+    background-color: rgba(252, 229, 225, 0.5);
+}
+
+.edit-group button.add-lain{
+    color: #4E709D;
+    font-weight: bold;
+}
+.edit-group button.add-lain:hover{
+    background-color: rgba(225, 237, 252, 0.5);
+}
+
+.edit-group input[type=text]{
+    text-indent: 10px;
+}
+
+.baris{
+    float: left;
+    width: 45%;
+}
+
+.kolom{
+    float: right;
+    width: 45%;
+}
+
+.label-skala span{
+    display: inline-block;
+    width: 20px;
+    color: slategrey;
+}
+
+.control-edit{
+    border-top: 1px solid #dddee9;
+    text-align: right;
+    color: #424874;
+}
+
+.control-edit span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* Switch Slider */
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    background-color: #CD5D7D
+}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: -5px;
+    background-color: #70AF85;
+    border-radius: 50%;
+}
+
+input:checked + .slider{
+    background-color: #2196F3;
+}
+
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 /* Form Group */
 .form_group label{
     display: block;
@@ -323,6 +497,9 @@ nav{
 /* Dropdown */
 .dropdown{
     padding: 5px;
+    border: none;
+    background-color: rgba(225, 237, 252, 0.5);
+    margin: 10px 0px;
 }
 
 .dropdown option{
@@ -425,7 +602,7 @@ footer{
 }
 
 /* Login */
-.logo{
+.logo-form{
     text-align: center;
 }
 
@@ -533,6 +710,18 @@ footer{
     .jawab-singkat{
         width: 100%;
     }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
 }
 
 /* Ukuran Smartphone S */
@@ -583,6 +772,18 @@ footer{
 
     .jawab-singkat{
         width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
     }
 }
 
@@ -635,6 +836,18 @@ footer{
     .jawab-singkat{
         width: 100%;
     }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
 }
 
 /* Ukuran Smartphone L */
@@ -685,6 +898,18 @@ footer{
 
     .jawab-singkat{
         width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
     }
 }
 
@@ -758,6 +983,18 @@ footer{
     .bottom-menu{
         font-size: 20px;
     }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
 }
 
 /* Ukuran 970 */
@@ -792,6 +1029,18 @@ footer{
     .bottom-menu{
         font-size: 20px;
     }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
 }
 
 /* Ukuran 1024 */
@@ -818,11 +1067,17 @@ footer{
 
 /* Ukuran 1220 */
 @media screen and (max-width: 1220px) and (min-width: 1025px){
+    .container{
+        width: 50%;
+    }
+
     .menu-list{
+        width: 50%;
         font-size: 18px;
     }
 
     .mobile-nav{
+        width: 50%;
         font-size: 20px;
     }
     
@@ -836,6 +1091,7 @@ footer{
     }
 
     .bottom-menu{
+        width: 50%;
         font-size: 20px;
     }
 }

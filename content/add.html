@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../icons/css/all.css" rel="stylesheet">
+    <title>Semalam</title>
+</head>
+<body>
+    <nav>
+        <div class="mobile-nav">
+            <div class="logo">
+                <a href="#">TITLE</a>
+            </div>
+
+            <div class="user">
+                <a onclick="tampilMenu()" class="userbtn"><i class="far fa-user-circle"></i></a>
+            </div>
+        </div>
+        <div id="menuakun" class="menu-list">
+            <div class="username">
+                <h3>Andika Cole</h3>
+            </div>
+            
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Content -->
+        <div class="row-content">
+
+            <!-- Component JUDUL -->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Judul</p>
+                    <input type="text" name="judul" id="judul" class="text" placeholder="Masukan judul">
+                    <br>
+                    <input type="text" name="deskripsi" id="deskripsi" class="text" placeholder="Masukan deskripsi">
+                </div>
+            </div>
+
+            <!-- Component Jawaban Singkat -->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Singkat</p>
+                    <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
+                    <!-- Pratinjau kolom jawaban -->
+                    <input type="text" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban singkat" disabled>
+
+                    <div class="control-edit">
+                        <span><i class="fas fa-clone"></i></span>
+                        <span><i class="fas fa-trash"></i></span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Jawaban Panjang -->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Panjang</p>
+                    <input type="text" name="tanyapanjang" id="tanyapanjang" class="text" placeholder="Masukan pertanyaan untuk jawaban panjang">
+                    <!-- Pratinjau kolom jawaban -->
+                    <textarea name="" id="" cols="30" rows="10" class="pratinjau" disabled>Teks jawaban panjang</textarea>
+                </div>
+            </div>
+
+            <!-- Component Pilihan Ganda 1-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Pilihan Ganda</p>
+                    <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
+                        
+                    <div class="edit-group">
+                        <input type="radio" name="pilih" id="pilih1" disabled>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
+                        <button id="del"><i class="fas fa-times"></i></button>
+                    </div>
+
+                    <div class="edit-group">
+                        <input type="radio" name="pilih" id="pilih1" disabled>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
+                        <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Pilihan Ganda 2-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Pilihan Ganda v2</p>
+                    <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
+                    <div class="baris">
+                        <label for="">Baris</label>
+                        <div class="edit-group">
+                            <input type="radio" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Baris">
+                            <button id="del"><i class="fas fa-times"></i></button>
+                        </div>
+    
+                        <div class="edit-group">
+                            <input type="radio" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah baris">
+                        </div>
+                    </div>
+                    <div class="kolom">
+                        <label for="">Kolom</label>
+                        <div class="edit-group">
+                            <input type="radio" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Kolom">
+                            <button id="del"><i class="fas fa-times"></i></button>
+                        </div>
+    
+                        <div class="edit-group">
+                            <input type="radio" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Kotak Centang -->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Pilihan Kotak Centang</p>
+                    <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
+                        
+                    <div class="edit-group">
+                        <input type="checkbox" name="pilih" id="pilih1" disabled>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
+                        <button id="del"><i class="fas fa-times"></i></button>
+                    </div>
+
+                    <div class="edit-group">
+                        <input type="checkbox" name="pilih" id="pilih1" disabled>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
+                        <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Kotak Centang v2-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Pilihan Kotak centang v2</p>
+                    <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
+                    <div class="baris">
+                        <label for="">Baris</label>
+                        <div class="edit-group">
+                            <input type="checkbox" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Baris">
+                            <button id="del"><i class="fas fa-times"></i></button>
+                        </div>
+    
+                        <div class="edit-group">
+                            <input type="checkbox" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah baris">
+                        </div>
+                    </div>
+                    <div class="kolom">
+                        <label for="">Kolom</label>
+                        <div class="edit-group">
+                            <input type="checkbox" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Kolom">
+                            <button id="del"><i class="fas fa-times"></i></button>
+                        </div>
+    
+                        <div class="edit-group">
+                            <input type="checkbox" name="pilih" id="pilih1" disabled>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componen Tanggal-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Tanggal</p>
+                    <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
+                    <!-- Pratinjau kolom jawaban -->
+                    <input type="date" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban tanggal" disabled>
+                </div>
+            </div>
+
+            <!-- Componen Waktu-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Waktu</p>
+                    <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
+                    <!-- Pratinjau kolom jawaban -->
+                    <input type="time" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban tanggal" disabled>
+                </div>
+            </div>
+
+            <!-- Component Skala Linier-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Skala Linier</p>
+                    <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
+                    <select name="sl" id="sl" class="dropdown">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+
+                    <span>sampai</span>
+
+                    <select name="sl" id="sl" class="dropdown">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <div class="label-skala">
+                        <span id="skala-a">0</span>
+                        <input type="text" name="tanya" id="tanya" class="" placeholder="Label (optional)">
+                    </div>
+                    <div class="label-skala">
+                        <span id="skala-b">10</span>
+                        <input type="text" name="tanya" id="tanya" class="" placeholder="Label (optional)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Drop Down-->
+            <div class="content">
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Pertanyaan Pilihan Dropdown</p>
+                    <input type="text" name="pilihdropdown" id="pilihdropdown" class="text" placeholder="Masukan pertanyaan pilihan Dropdown">
+                        
+                    <div class="edit-group">
+                        <span id="nomor">1</span>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
+                        <button id="del"><i class="fas fa-times"></i></button>
+                    </div>
+
+                    <div class="edit-group">
+                        <span id="nomor">2</span>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom-menu">
+            <div class="menu"><a href="#"><i class="far fa-plus-square"></i></a></div>
+            <div class="menu"><a href=""><i class="far fa-image"></i></a></div>
+            <div class="menu"><a href=""><strong>T</strong></a></div>
+            <div class="menu"><a href=""><i class="fas fa-bars"></i></a></div>
+        </div>
+    </footer>
+    
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
