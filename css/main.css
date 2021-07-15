@@ -284,6 +284,7 @@ nav{
 .row-content{
     width: 100%;
     margin-top: 10px;
+    font-size: 15px;
 }
 
 /* Component Content */
@@ -403,14 +404,23 @@ nav{
     width: 45%;
 }
 
+.label-skala{
+    margin: 10px 0px;
+}
+
 .label-skala span{
     display: inline-block;
     width: 20px;
     color: slategrey;
 }
 
+.container-control-edit{
+    float: left;
+    width: 100%;
+}
+
 .control-edit{
-    border-top: 1px solid #dddee9;
+    border-top: 1px dashed #dddee9;
     text-align: right;
     color: #424874;
 }
@@ -422,55 +432,33 @@ nav{
     font-size: 20px;
 }
 
-/* Switch Slider */
-.switch{
-    position: relative;
+.control-edit button{
     display: inline-block;
-    width: 50px;
-    height: 10px;
-    background-color: yellowgreen;
-    border-radius: 20px;
-}
-
-.switch input{
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider{
-    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 20px;
-    background-color: #CD5D7D
+    color: gray;
 }
 
-.slider::before{
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 0px;
-    bottom: -5px;
-    background-color: #70AF85;
-    border-radius: 50%;
+.control-edit button:hover{
+    color: #424874;
 }
 
-input:checked + .slider{
-    background-color: #2196F3;
+.wajib{
+    padding-right: 5px;
+    cursor: pointer;
+    color: gray;
 }
 
-input:focus + .slider{
-    box-shadow: 0 0 1px #2196F3;
+input.wajib:checked + label.wajib{
+    color: #424874;
 }
 
-input:checked + .slider:before{
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+.divider{
+    color: darkgrey;
 }
 
 /* Form Group */
@@ -657,6 +645,35 @@ footer{
 
 .grup-input:focus-within{
     color: #70AF85;
+}
+
+.shortcut{
+    display: none;
+}
+
+/* Table */
+.data-content{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.data-table button.tombol{
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.data-table tbody tr:nth-child(even){
+    background-color: #42487418;
+}
+
+.data-table tbody tr:hover{
+    font-weight: bold;
+    background-color: #DCD6F7;
+}
+
+.table-responsive{
+    overflow-x: auto;
 }
 
 /* ------------------------------------------------ */

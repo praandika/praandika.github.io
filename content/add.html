@@ -56,12 +56,10 @@
                     <input type="text" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban singkat" disabled>
 
                     <div class="control-edit">
-                        <span><i class="fas fa-clone"></i></span>
-                        <span><i class="fas fa-trash"></i></span>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                            </label>
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-js1" name="wajib" class="wajib"><label for="wajib-js1" class="wajib">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -74,6 +72,13 @@
                     <input type="text" name="tanyapanjang" id="tanyapanjang" class="text" placeholder="Masukan pertanyaan untuk jawaban panjang">
                     <!-- Pratinjau kolom jawaban -->
                     <textarea name="" id="" cols="30" rows="10" class="pratinjau" disabled>Teks jawaban panjang</textarea>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-jp1" name="wajib" class="wajib"><label for="wajib-jp1" class="wajib">Wajib diisi</label></span>
+                    </div>
                 </div>
             </div>
 
@@ -94,6 +99,13 @@
                         <input type="radio" name="pilih" id="pilih1" disabled>
                         <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
                         <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                    </div>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-pg1" name="wajib" class="wajib"><label for="wajib-pg1" class="wajib">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -130,6 +142,15 @@
                             <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
                         </div>
                     </div>
+
+                    <div class="container-control-edit">
+                        <div class="control-edit">
+                            <button id="copy"><i class="fas fa-clone"></i></button>
+                            <button id="delete" ><i class="fas fa-trash"></i></button>
+                            <span class="divider">|</span>
+                            <span class="wajib"><input type="checkbox" id="wajib-pgx1" name="wajib" class="wajib"><label for="wajib-pgx1" class="wajib">Wajib diisi</label></span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -150,6 +171,13 @@
                         <input type="checkbox" name="pilih" id="pilih1" disabled>
                         <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
                         <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                    </div>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-pk1" name="wajib" class="wajib"><label for="wajib-pk1" class="wajib">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -186,6 +214,15 @@
                             <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
                         </div>
                     </div>
+
+                    <div class="container-control-edit">
+                        <div class="control-edit">
+                            <button id="copy"><i class="fas fa-clone"></i></button>
+                            <button id="delete" ><i class="fas fa-trash"></i></button>
+                            <span class="divider">|</span>
+                            <span class="wajib"><input type="checkbox" id="wajib-pkx1" name="wajib" class="wajib"><label for="wajib-pkx1" class="wajib">Wajib diisi</label></span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -197,6 +234,13 @@
                     <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
                     <!-- Pratinjau kolom jawaban -->
                     <input type="date" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban tanggal" disabled>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-tg1" name="wajib" class="wajib"><label for="wajib-tg1" class="wajib">Wajib diisi</label></span>
+                    </div>
                 </div>
             </div>
 
@@ -208,6 +252,13 @@
                     <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
                     <!-- Pratinjau kolom jawaban -->
                     <input type="time" name="jawab" id="jawab" class="pratinjau" placeholder="Teks jawaban tanggal" disabled>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-wt1" name="wajib" class="wajib"><label for="wajib-wt1" class="wajib">Wajib diisi</label></span>
+                    </div>
                 </div>
             </div>
 
@@ -243,6 +294,13 @@
                         <span id="skala-b">10</span>
                         <input type="text" name="tanya" id="tanya" class="" placeholder="Label (optional)">
                     </div>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-sl1" name="wajib" class="wajib"><label for="wajib-sl1" class="wajib">Wajib diisi</label></span>
+                    </div>
                 </div>
             </div>
 
@@ -263,6 +321,13 @@
                         <span id="nomor">2</span>
                         <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
                     </div>
+
+                    <div class="control-edit">
+                        <button id="copy"><i class="fas fa-clone"></i></button>
+                        <button id="delete" ><i class="fas fa-trash"></i></button>
+                        <span class="divider">|</span>
+                        <span class="wajib"><input type="checkbox" id="wajib-dd1" name="wajib" class="wajib"><label for="wajib-dd1" class="wajib">Wajib diisi</label></span>
+                    </div>
                 </div>
             </div>
 
@@ -270,11 +335,19 @@
     </div>
 
     <footer>
+        <div id="container-shortcut" class="shortcut">
+            <div class="bottom-menu">
+            <div class="menu"><a href="add.html"><i class="fas fa-plus-circle"></i></a></div>
+            <div class="menu"><a href="quesioner.html" target="_blank"><i class="fas fa-eye"></i></a></div>
+            <div class="menu"><a href="result.html"><i class="fas fa-poll"></i></a></div>
+            <div class="menu"><a href=""><i class="far fa-question-circle"></i></a></div>
+            </div>
+        </div>
         <div class="bottom-menu">
-            <div class="menu"><a href="#"><i class="far fa-plus-square"></i></a></div>
-            <div class="menu"><a href=""><i class="far fa-image"></i></a></div>
-            <div class="menu"><a href=""><strong>T</strong></a></div>
-            <div class="menu"><a href=""><i class="fas fa-bars"></i></a></div>
+            <div class="menu"><a href="#"><i class="fas fa-plus"></i></a></div>
+            <div class="menu"><a href="#"><i class="far fa-image"></i></a></div>
+            <div class="menu"><a href="#"><strong>T</strong></a></div>
+            <div class="menu"><a onclick="tampilShortcut()"><i class="fas fa-bars"></i></a></div>
         </div>
     </footer>
     

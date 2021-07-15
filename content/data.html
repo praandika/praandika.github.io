@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../icons/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/datatables.min.css"/>
+    <title>Semalam</title>
+</head>
+<body>
+    <nav>
+        <div class="mobile-nav">
+            <div class="logo">
+                <a href="#">Data {}</a>
+            </div>
+
+            <div class="user">
+                <a onclick="tampilMenu()" class="userbtn"><i class="far fa-user-circle"></i></a>
+            </div>
+        </div>
+        <div id="menuakun" class="menu-list">
+            <div class="username">
+                <h3>Andika Cole</h3>
+            </div>
+            
+            <a href="content/register.html">Register</a>
+            <a href="content/login.html">Login</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row-content">
+            <div class="data-content">
+                <div>
+                    <table id="dataTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Quesioner</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
+                                <td>
+                                    <button class="tombol tmb-utama"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="tombol tmb-batal"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
+                                <td>
+                                    <button class="tombol tmb-utama"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="tombol tmb-batal"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
+                                <td>
+                                    <button class="tombol tmb-utama"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="tombol tmb-batal"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Dampak PPKM Terhadap Tingkat Stress Hewan Qurban</td>
+                                <td>
+                                    <button class="tombol tmb-utama"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="tombol tmb-batal"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom-menu">
+            <div class="menu"><a href="add.html"><i class="fas fa-plus-circle"></i></a></div>
+            <div class="menu"><a href="quesioner.html" target="_blank"><i class="fas fa-eye"></i></a></div>
+            <div class="menu"><a href="result.html"><i class="fas fa-poll"></i></a></div>
+            <div class="menu"><a href=""><i class="far fa-question-circle"></i></a></div>
+        </div>
+    </footer>
+    
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/datatables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#dataTable').DataTable({
+                "scrollX": true
+            });
+        } );
+    </script>
+
+</body>
+</html>
