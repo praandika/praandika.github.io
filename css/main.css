@@ -300,6 +300,39 @@ nav{
 }
 /* END Menu Versi 2 */
 
+/* CARD */
+.card{
+    display: inline-block;
+    padding: 25px;
+    margin: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.card p{
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.card i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card-label{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+/* END CARD */
+
 .menu-label{
     word-wrap: break-word;
     width: 50px;
@@ -749,6 +782,25 @@ footer{
         font-size: 20px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 4px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 20px;
+    }
+
+
+    /* END CARD */
+
     .mobile-nav{
         width: 100%;
         margin: 0 auto;
@@ -784,7 +836,7 @@ footer{
 }
 
 /* Ukuran Smartphone S */
-@media screen and (max-width: 320px) and (min-width: 281px) {
+@media screen and (max-width: 313px) and (min-width: 281px) {
     .container{
         width: 100%;
         margin: 0 auto;
@@ -826,6 +878,116 @@ footer{
         font-size: 20px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 5px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 25px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 320px) and (min-width: 314px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 12px;
+    }
+
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 5px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 8px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 20px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 25px;
+    }
+    /* END CARD */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -861,7 +1023,7 @@ footer{
 }
 
 /* Ukuran Smartphone M */
-@media screen and (max-width: 375px) and (min-width: 321px) {
+@media screen and (max-width: 347px) and (min-width: 321px) {
     .container{
         width: 100%;
         margin: 0 auto;
@@ -903,6 +1065,116 @@ footer{
         font-size: 30px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 9px;
+    }
+
+    .card i{
+        font-size: 30px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 348px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 12px;
+    }
+
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 30px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 9px;
+    }
+
+    .card i{
+        font-size: 30px;
+    }
+    /* END CARD */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -938,7 +1210,7 @@ footer{
 }
 
 /* Ukuran Smartphone L */
-@media screen and (max-width: 480px) and (min-width: 376px) {
+@media screen and (max-width: 419px) and (min-width: 376px) {
     .container{
         width: 100%;
         margin: 0 auto;
@@ -980,6 +1252,23 @@ footer{
         font-size: 30px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 35px;
+    }
+    /* END CARD */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -1014,10 +1303,287 @@ footer{
     }
 }
 
+@media screen and (max-width: 440px) and (min-width: 420px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 15px;
+    }
 
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 30px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 35px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        font-size: 25px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 25px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 441px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 15px;
+    }
+
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 30px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 35px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        font-size: 25px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 25px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 480px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 15px;
+    }
+
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 30px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 35px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        font-size: 25px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bottom-menu{
+        width: 100%;
+        margin: 15px auto;
+        font-size: 25px;
+    }
+
+    /* Component Judul */
+    .content{
+        margin: 10px;
+    }
+
+    .jawab-singkat{
+        width: 100%;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
 
 /* Ukuran Tab */
-@media screen and (max-width: 800px) and (min-width: 481px) {
+@media screen and (max-width: 499px) and (min-width: 481px) {
     .container{
         width: 100%;
         margin: 0 auto;
@@ -1054,6 +1620,551 @@ footer{
         font-size: 40px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 559px) and (min-width: 500px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 619px) and (min-width: 560px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 679px) and (min-width: 620px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 9px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 707px) and (min-width: 680px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 10px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 753px) and (min-width: 708px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 14px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 789px) and (min-width: 754px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 15px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 790px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 15px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 800px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 11px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 40px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 16px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 45px;
+    }
+    /* END CARD */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -1067,7 +2178,7 @@ footer{
 }
 
 /* Ukuran Tab 2 */
-@media screen and (max-width: 950px) and (min-width: 801px){
+@media screen and (max-width: 899px) and (min-width: 801px){
     .grup-input span i{
         margin-top: 50%;
     }
@@ -1109,6 +2220,23 @@ footer{
         font-size: 30px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 4px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 30px;
+    }
+    /* END CARD */
+
     .bottom-menu{
         font-size: 20px;
     }
@@ -1126,7 +2254,82 @@ footer{
     }
 }
 
-/* Ukuran 970 */
+@media screen and (max-width: 950px) and (min-width: 900px){
+    .grup-input span i{
+        margin-top: 50%;
+    }
+
+    .menu-list{
+        font-size: 16px;
+    }
+
+    .menu-list a:focus{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,222,233,1) 100%, rgba(6,44,99,1) 100%);
+        text-indent: 10px;
+        font-weight: bold;
+    }
+
+    .mobile-nav{
+        font-size: 20px;
+    }
+
+    .container{
+        font-size: 15px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 7px;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 7px;
+        width: 30%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 30px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 30px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 20px;
+    }
+
+    .baris{
+        width: 100%;
+    }
+    
+    .kolom{
+        width: 100%;
+    }
+
+    .edit-group button.add-lain{
+        position: unset;
+    }
+}
+
 @media screen and (max-width: 970px) and (min-width: 951px){
     .grup-input span i{
         margin-top: 50%;
@@ -1169,6 +2372,23 @@ footer{
         font-size: 30px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .card i{
+        font-size: 30px;
+    }
+    /* END CARD */
+
     .bottom-menu{
         font-size: 20px;
     }
@@ -1186,8 +2406,46 @@ footer{
     }
 }
 
-/* Ukuran 1024 */
-@media screen and (max-width: 1024px) and (min-width: 971px) {
+/* Laptop M Ukuran 1024 */
+@media screen and (max-width: 999px) and (min-width: 971px) {
+    .container{
+        width: 50%;
+        margin: 0 auto;
+        min-height: 2000px;
+    }
+
+    .menu-list{
+        width: 50%;
+        font-size: 20px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
+    .mobile-nav{
+        width: 50%;
+    }
+
+    .bottom-menu{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 1000px){
     .container{
         width: 50%;
         margin: 0 auto;
@@ -1208,8 +2466,8 @@ footer{
     }
 }
 
-/* Ukuran 1220 */
-@media screen and (max-width: 1220px) and (min-width: 1025px){
+/* Laptop L Ukuran 1220 */
+@media screen and (max-width: 1119px) and (min-width: 1025px){
     .container{
         width: 50%;
     }
@@ -1233,14 +2491,77 @@ footer{
         margin: 10px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
     .bottom-menu{
         width: 50%;
         font-size: 20px;
     }
 }
 
-/* Ukuran 1530 */
-@media screen and (max-width: 1530px) and (min-width: 1441px){
+@media screen and (max-width: 1220px) and (min-width: 1120px){
+    .container{
+        width: 50%;
+    }
+
+    .menu-list{
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .mobile-nav{
+        width: 50%;
+        font-size: 20px;
+    }
+    
+    .container{
+        font-size: 20px;
+    }
+
+    .main-menu{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        width: 50%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1220px){
     .menu-list{
         font-size: 18px;
     }
@@ -1258,13 +2579,150 @@ footer{
         margin: 15px;
     }
 
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1300px){
+    .menu-list{
+        font-size: 18px;
+    }
+
+    .mobile-nav{
+        font-size: 30px;
+    }
+    
+    .container{
+        font-size: 25px;
+    }
+
+    .main-menu{
+        padding: 20px;
+        margin: 15px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1449px) and (min-width: 1441px){
+    .menu-list{
+        font-size: 18px;
+    }
+
+    .mobile-nav{
+        font-size: 30px;
+    }
+    
+    .container{
+        font-size: 25px;
+    }
+
+    .main-menu{
+        padding: 20px;
+        margin: 15px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1530px) and (min-width: 1450px){
+    .menu-list{
+        font-size: 18px;
+    }
+
+    .mobile-nav{
+        font-size: 30px;
+    }
+    
+    .container{
+        font-size: 25px;
+    }
+
+    .main-menu{
+        padding: 20px;
+        margin: 15px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .card i{
+        font-size: 50px;
+    }
+    /* END CARD */
+
     .bottom-menu{
         font-size: 30px;
     }
 }
 
 /* Ukuran 4K */
-@media screen and (max-width: 2560px) and (min-width: 1531px) {
+@media screen and (max-width: 1649px) and (min-width: 1531px){
     .container{
         margin: 0 auto;
         min-height: 2000px;
@@ -1289,6 +2747,408 @@ footer{
     .main-menu-2 i{
         font-size: 50px;
     }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1799px) and (min-width: 1650px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 9px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1949px) and (min-width: 1800px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 10px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 2099px) and (min-width: 1950px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 11px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 2249px) and (min-width: 2100px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 12px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 2399px) and (min-width: 2250px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 13px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 2549px) and (min-width: 2400px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 14px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
+
+    .bottom-menu{
+        font-size: 35px;
+        margin: 15px auto;
+    }
+
+    /* Component Judul */
+    .content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2550px){
+    .container{
+        margin: 0 auto;
+        min-height: 2000px;
+        font-size: 30px;
+    }
+
+    .mobile-nav{
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .main-menu-2{
+        padding: 15px;
+        margin: 10px;
+        width: 32%;
+    }
+
+    .main-menu-2 p{
+        font-size: 10px;
+    }
+    
+    .main-menu-2 i{
+        font-size: 50px;
+    }
+
+    /* CARD */
+    .card{
+        padding: 25px;
+        margin: 15px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card p{
+        font-size: 12px;
+    }
+
+    .card i{
+        font-size: 55px;
+    }
+    /* END CARD */
 
     .bottom-menu{
         font-size: 35px;
