@@ -20,7 +20,7 @@ a{
 }
 
 body{
-    background-color: #F9F9F9
+    background-color: #F9F9F9;
 }
 
 /* Input Text */
@@ -591,6 +591,7 @@ footer{
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    background-color: #F9F9F9;
 }
 
 .bottom-menu{
