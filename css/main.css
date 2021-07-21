@@ -269,16 +269,44 @@ nav{
     font-size: 10px;
 }
 
+.main-menu i{
+    font-size: 50px;
+}
+
+/* ---- Menu Versi 2 */
+.row-menu-2{
+    text-align: center;
+    display: flex;
+
+}
+
+.main-menu-2{
+    padding: 25px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 25%;
+
+    -webkit-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83); 
+    box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
+    -moz-box-shadow: 2px 4px 14px -10px rgba(132,132,132,0.83);
+}
+
+.main-menu-2 p{
+    font-size: 10px;
+}
+
+.main-menu-2 i{
+    font-size: 50px;
+}
+/* END Menu Versi 2 */
+
 .menu-label{
     word-wrap: break-word;
     width: 50px;
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
-}
-
-.main-menu i{
-    font-size: 50px;
 }
 
 .row-content{
