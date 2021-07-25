@@ -322,6 +322,10 @@ nav{
     margin-bottom: 20px;
 }
 
+.card h3{
+    margin-bottom: 10px;
+}
+
 .card-label{
     width: 100%;
     position: absolute;
@@ -332,6 +336,44 @@ nav{
     font-weight: bold;
 }
 /* END CARD */
+
+/* CARD-BLOCK */
+.card-block{
+    display: inline-block;
+    padding: 25px;
+    margin: 2px 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 98%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.card-block p{
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.card-block h3{
+    margin-bottom: 10px;
+}
+
+.card-block i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.card-label{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+}
+/* END CARD-BLOCK */
 
 .menu-label{
     word-wrap: break-word;
@@ -619,7 +661,7 @@ textarea:focus{
 
 /* Bottom Menu */
 footer{
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     overflow: hidden;
@@ -648,6 +690,11 @@ footer{
 
 .menu{
     margin: 0 auto;
+    text-align: center;
+}
+
+.menu p{
+    font-size: 12px;
 }
 
 /* Login */
@@ -814,6 +861,10 @@ footer{
 
 /* Ukuran Smartphone XS */
 @media screen and (max-width: 280px) {
+    .menu p{
+        font-size: 8px;
+    }
+
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -903,9 +954,23 @@ footer{
     .card i{
         font-size: 20px;
     }
-
-
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        width: 96%;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 20px;
+    }
+    /* END CARD-BLOCK */
 
     .mobile-nav{
         width: 100%;
@@ -943,6 +1008,10 @@ footer{
 
 /* Ukuran Smartphone S */
 @media screen and (max-width: 313px) and (min-width: 281px) {
+    .menu p{
+        font-size: 8px;
+    }
+
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1034,6 +1103,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 25px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -1069,6 +1153,10 @@ footer{
 }
 
 @media screen and (max-width: 320px) and (min-width: 314px) {
+    .menu p{
+        font-size: 8px;
+    }
+
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1160,6 +1248,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 25px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -1196,6 +1299,10 @@ footer{
 
 /* Ukuran Smartphone M */
 @media screen and (max-width: 347px) and (min-width: 321px) {
+    .menu p{
+        font-size: 9px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1287,6 +1394,22 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 9px;
+    }
+
+    .card-block i{
+        font-size: 30px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -1322,6 +1445,10 @@ footer{
 }
 
 @media screen and (max-width: 375px) and (min-width: 348px) {
+    .menu p{
+        font-size: 9px;
+    }
+
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1413,6 +1540,20 @@ footer{
     }
     /* END CARD */
 
+     /* CARD-BLOCK */
+    .card-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+     .card-block p{
+        font-size: 9px;
+    }
+
+    .card-block i{
+        font-size: 30px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -1449,6 +1590,10 @@ footer{
 
 /* Ukuran Smartphone L */
 @media screen and (max-width: 419px) and (min-width: 376px) {
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1540,6 +1685,21 @@ footer{
     }
     /* END CARD */
 
+     /* CARD-BLOCK */
+    .card-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+     .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 35px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -1575,6 +1735,10 @@ footer{
 }
 
 @media screen and (max-width: 440px) and (min-width: 420px) {
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1666,6 +1830,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 35px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -1701,6 +1880,10 @@ footer{
 }
 
 @media screen and (max-width: 479px) and (min-width: 441px) {
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1792,6 +1975,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 35px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -1827,6 +2025,10 @@ footer{
 }
 
 @media screen and (max-width: 480px) and (min-width: 480px) {
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -1918,6 +2120,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 35px;
+    }
+    /* END CARD-BLOCK */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -1954,6 +2171,10 @@ footer{
 
 /* Ukuran Tab */
 @media screen and (max-width: 499px) and (min-width: 481px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2040,6 +2261,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2053,6 +2289,10 @@ footer{
 }
 
 @media screen and (max-width: 559px) and (min-width: 500px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2139,6 +2379,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2152,6 +2407,10 @@ footer{
 }
 
 @media screen and (max-width: 619px) and (min-width: 560px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2238,6 +2497,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2251,6 +2525,10 @@ footer{
 }
 
 @media screen and (max-width: 679px) and (min-width: 620px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2337,6 +2615,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2350,6 +2643,10 @@ footer{
 }
 
 @media screen and (max-width: 707px) and (min-width: 680px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2436,6 +2733,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2449,6 +2761,10 @@ footer{
 }
 
 @media screen and (max-width: 753px) and (min-width: 708px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2535,6 +2851,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2548,6 +2879,10 @@ footer{
 }
 
 @media screen and (max-width: 789px) and (min-width: 754px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2633,6 +2968,21 @@ footer{
         font-size: 45px;
     }
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
 
     .bottom-menu{
         width: 80%;
@@ -2647,6 +2997,10 @@ footer{
 }
 
 @media screen and (max-width: 799px) and (min-width: 790px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2733,6 +3087,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2746,6 +3115,10 @@ footer{
 }
 
 @media screen and (max-width: 800px) and (min-width: 800px) {
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2832,6 +3205,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 45px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -2846,6 +3234,10 @@ footer{
 
 /* Ukuran Tab 2 */
 @media screen and (max-width: 899px) and (min-width: 801px){
+    .menu p{
+        font-size: 8px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -2938,6 +3330,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 30px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 20px;
     }
@@ -2956,6 +3363,10 @@ footer{
 }
 
 @media screen and (max-width: 950px) and (min-width: 900px){
+    .menu p{
+        font-size: 8px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -3047,6 +3458,21 @@ footer{
         font-size: 30px;
     }
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 30px;
+    }
+    /* END CARD-BLOCK */
 
     .bottom-menu{
         font-size: 20px;
@@ -3066,6 +3492,10 @@ footer{
 }
 
 @media screen and (max-width: 970px) and (min-width: 951px){
+    .menu p{
+        font-size: 8px;
+    }
+    
     .error-container{
         width: 100%;
         margin: 0 auto;
@@ -3157,6 +3587,21 @@ footer{
         font-size: 30px;
     }
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .card-block p{
+        font-size: 8px;
+    }
+
+    .card-block i{
+        font-size: 30px;
+    }
+    /* END CARD-BLOCK */
 
     .bottom-menu{
         font-size: 20px;
@@ -3177,6 +3622,10 @@ footer{
 
 /* Laptop M Ukuran 1024 */
 @media screen and (max-width: 999px) and (min-width: 971px) {
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 50%;
         margin: 0 auto;
@@ -3237,6 +3686,21 @@ footer{
         font-size: 50px;
     }
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
 
     .mobile-nav{
         width: 50%;
@@ -3303,6 +3767,10 @@ footer{
 
 /* Laptop L Ukuran 1220 */
 @media screen and (max-width: 1119px) and (min-width: 1025px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 50%;
         margin: 0 auto;
@@ -3374,6 +3842,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 50%;
         font-size: 20px;
@@ -3381,6 +3864,10 @@ footer{
 }
 
 @media screen and (max-width: 1220px) and (min-width: 1120px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 50%;
         margin: 0 auto;
@@ -3452,6 +3939,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         width: 50%;
         font-size: 20px;
@@ -3459,6 +3961,10 @@ footer{
 }
 
 @media screen and (max-width: 1299px) and (min-width: 1220px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         width: 50%;
         margin: 0 auto;
@@ -3527,12 +4033,31 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1300px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .menu-list{
         font-size: 18px;
     }
@@ -3567,12 +4092,31 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 1449px) and (min-width: 1441px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -3640,12 +4184,31 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 1530px) and (min-width: 1450px){
+    .menu p{
+        font-size: 10px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -3713,6 +4276,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .card-block p{
+        font-size: 10px;
+    }
+
+    .card-block i{
+        font-size: 50px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 30px;
     }
@@ -3720,6 +4298,10 @@ footer{
 
 /* Ukuran 4K */
 @media screen and (max-width: 1649px) and (min-width: 1531px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -3794,6 +4376,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -3807,6 +4404,10 @@ footer{
 }
 
 @media screen and (max-width: 1799px) and (min-width: 1650px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -3881,6 +4482,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -3894,6 +4510,10 @@ footer{
 }
 
 @media screen and (max-width: 1949px) and (min-width: 1800px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -3968,6 +4588,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -3981,6 +4616,10 @@ footer{
 }
 
 @media screen and (max-width: 2099px) and (min-width: 1950px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -4055,6 +4694,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -4068,6 +4722,10 @@ footer{
 }
 
 @media screen and (max-width: 2249px) and (min-width: 2100px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -4142,6 +4800,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -4155,6 +4828,10 @@ footer{
 }
 
 @media screen and (max-width: 2399px) and (min-width: 2250px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -4229,6 +4906,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -4242,6 +4934,10 @@ footer{
 }
 
 @media screen and (max-width: 2549px) and (min-width: 2400px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -4316,6 +5012,21 @@ footer{
     }
     /* END CARD */
 
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -4329,6 +5040,10 @@ footer{
 }
 
 @media screen and (max-width: 2560px) and (min-width: 2550px){
+    .menu p{
+        font-size: 12px;
+    }
+    
     .error-container{
         margin: 0 auto;
         overflow: hidden;
@@ -4402,6 +5117,21 @@ footer{
         font-size: 55px;
     }
     /* END CARD */
+
+    /* CARD-BLOCK */
+    .card-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card-block p{
+        font-size: 12px;
+    }
+
+    .card-block i{
+        font-size: 55px;
+    }
+    /* END CARD-BLOCK */
 
     .bottom-menu{
         font-size: 35px;
