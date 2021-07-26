@@ -34,13 +34,61 @@
     <div class="container">
         <!-- Content -->
         <div class="row-content">
+            <!-- Component JUDUL -->
             <div class="content">
-                
+                <div class="line"></div>
+                <div class="bungkus-content edit">
+                    <p>*Judul</p>
+                    <input type="text" name="judul" id="judul" class="text" placeholder="Masukan judul">
+                    <br>
+                    <input type="text" name="deskripsi" id="deskripsi" class="text" placeholder="Masukan deskripsi">
+                </div>
             </div>
+
+            <div class="setup"></div>
         </div>
     </div>
 
     <footer>
+        <div class="add-list">
+            <div class="add-list-content" id="jawabSingkat">
+                <i class="fas fa-grip-lines"></i>
+                Jawaban Singkat
+            </div>
+            <div class="add-list-content" id="jawabPanjang">
+                <i class="fas fa-align-left"></i>
+                Jawaban Panjang
+            </div>
+            <div class="add-list-content" id="pilihanGanda">
+                <i class="far fa-dot-circle"></i>
+                Pilihan Ganda
+            </div>
+            <div class="add-list-content" id="kisiPilihanGanda">
+                <i class="fas fa-dice-four"></i>
+                Kisi Pilihan Ganda
+            </div>
+            <div class="add-list-content" id="kotakCentang">
+                <i class="fas fa-check-square"></i>
+                Kotak Centang
+            </div>
+            <div class="add-list-content" id="petakKotakCentang">
+                <i class="fas fa-th"></i>
+                Petak Kotak Centang
+            </div>
+            <div class="add-list-content" id="tanggal">
+                <i class="far fa-calendar-alt"></i>
+                Tanggal
+            </div>
+            <div class="add-list-content" id="waktu">
+                <i class="far fa-clock"></i>
+                Waktu
+            </div>
+            <div class="add-list-content" id="skalaLinear">
+                <i class="fas fa-ellipsis-h"></i>
+                Skala Linear
+            </div>
+        </div>
+
         <div id="container-shortcut" class="shortcut">
             <div class="bottom-menu">
                 <div class="menu">
@@ -72,15 +120,41 @@
                 </div>
             </div>
         </div>
+
         <div class="bottom-menu">
-            <div class="menu"><a href="setup.html"><i class="fas fa-plus"></i></a></div>
-            <div class="menu"><a href="#"><i class="far fa-image"></i></a></div>
-            <div class="menu"><a href="#"><strong>T</strong></a></div>
-            <div class="menu"><a onclick="tampilShortcut()"><i class="fas fa-bars"></i></a></div>
+            <div class="menu" id="add">
+                <a href="javascript:;">
+                    <i class="fas fa-plus"></i>
+                    <p>Add</p>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a href="#">
+                    <i class="far fa-image"></i>
+                    <p>Image</p>
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <strong>T</strong>
+                    <p>Text</p>
+                </a>
+            </div>
+
+            <div class="menu">
+                <a onclick="tampilShortcut()">
+                    <i class="fas fa-bars"></i>
+                    <p>Menu</p>
+                </a>
+            </div>
         </div>
     </footer>
     
 
     <script src="../js/main.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/setup.js"></script>
+
 </body>
 </html>
