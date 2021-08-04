@@ -22,7 +22,7 @@ $(document).ready(function(){
     // Jawab Singkat
     $("#jawabSingkat").click(function(){
       $(".setup").append(`
-        <div class="content addjawabSingkat">
+        <div class="content addjawabSingkat" id="addjawabSingkat">
             <div class="line"></div>
             <div class="bungkus-content edit">
                 <p>*Pertanyaan Singkat</p>
@@ -48,7 +48,7 @@ $(document).ready(function(){
     // Jawab Panjang
     $("#jawabPanjang").click(function(){
         $(".setup").append(`
-            <div class="content addjawabPanjang">
+            <div class="content addjawabPanjang" id="addjawabPanjang">
                 <div class="line"></div>
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Panjang</p>
@@ -85,14 +85,14 @@ $(document).ready(function(){
                         <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
                         <button class="del"><i class="fas fa-times"></i></button>
                     </div>
-
-                    <div class="opsipilihanGanda"></div>
-
-                    <div class="edit-group">
+                    <div class="test"></div>
+                    <div class="edit-group opsipilihanGanda">
                         <input type="radio" name="pilih" id="pilih1" disabled>
-                        <input type="text" name="opsi" class="addOpsipilihanGanda" class="text" placeholder="Tambah opsi">
+                        <input type="text" name="opsi" class="text" placeholder="Tambah opsi">
                         <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
                     </div>
+
+                    <button class="addOpsiGanda" type="button"><i class="fas fa-clone"></i></button>
 
                     <div class="control-edit">
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
@@ -427,5 +427,55 @@ $(document).ready(function(){
 
     $("body").on("click",".remove",function(){ 
         $(this).parents(".addskalaLinier").remove();
+    });
+});
+
+// Copy Pertanyaan
+$(document).ready(function(){
+    $("body").on("click",".copy",function(){
+      $(this).parents(".addjawabSingkat").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){
+        $(this).parents(".addjawabPanjang").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){
+        $(this).parents(".addpilihanGanda").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addkisipilihanGanda").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addkotakCentang").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addpetakkotakCentang").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".adddropDown").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addTanggal").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addWaktu").clone().appendTo(".setup");
+    });
+
+    $("body").on("click",".copy",function(){ 
+        $(this).parents(".addskalaLinier").clone().appendTo(".setup");
+    });
+});
+
+// Copy Text Input
+$(document).ready(function(){
+    $("body").on("click",".addOpsiGanda", function(){
+        $(".textpilihanGanda").clone().appendTo( $(".test") );
     });
 });
