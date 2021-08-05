@@ -34,7 +34,7 @@ $(document).ready(function(){
                     <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                     <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                     <span class="divider">|</span>
-                    <span class="wajib"><input type="checkbox" id="wajib-js1" name="wajib" class="wajib"><label for="wajib-js1" class="wajib">Wajib diisi</label></span>
+                    <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@ $(document).ready(function(){
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-jp1" name="wajib" class="wajib"><label for="wajib-jp1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -79,26 +79,24 @@ $(document).ready(function(){
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Ganda</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
-                        
-                    <div class="edit-group textpilihanGanda">
+                    
+                    <div class="edit-group setInput">
                         <input type="radio" name="pilih" id="pilih1" disabled>
-                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
                         <button class="del"><i class="fas fa-times"></i></button>
                     </div>
-                    <div class="test"></div>
-                    <div class="edit-group opsipilihanGanda">
+                    
+                    <div class="edit-group addInput">
                         <input type="radio" name="pilih" id="pilih1" disabled>
-                        <input type="text" name="opsi" class="text" placeholder="Tambah opsi">
-                        <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                        <input type="text" name="opsi" class="text addOpsi" placeholder="Tambah opsi">
+                        <button id="add-lain" class="add-lain addLain-radio">atau tambahkan "Lainnya"</button>
                     </div>
-
-                    <button class="addOpsiGanda" type="button"><i class="fas fa-clone"></i></button>
 
                     <div class="control-edit">
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-pg1" name="wajib" class="wajib"><label for="wajib-pg1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -119,28 +117,28 @@ $(document).ready(function(){
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
                     <div class="baris">
                         <label for="">Baris</label>
-                        <div class="edit-group">
+                        <div class="edit-group setInput">
                             <input type="radio" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Baris">
-                            <button id="del"><i class="fas fa-times"></i></button>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                            <button class="del"><i class="fas fa-times"></i></button>
                         </div>
 
-                        <div class="edit-group">
+                        <div class="edit-group addInput">
                             <input type="radio" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah baris">
+                            <input type="text" name="opsi" class="text addOpsi" placeholder="Tambah baris">
                         </div>
                     </div>
                     <div class="kolom">
                         <label for="">Kolom</label>
-                        <div class="edit-group">
+                        <div class="edit-group setInput">
                             <input type="radio" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Kolom">
-                            <button id="del"><i class="fas fa-times"></i></button>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                            <button class="del"><i class="fas fa-times"></i></button>
                         </div>
 
-                        <div class="edit-group">
+                        <div class="edit-group addInput">
                             <input type="radio" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
+                            <input type="text" name="opsi" class="text addOpsi" placeholder="Tambah kolom">
                         </div>
                     </div>
 
@@ -149,7 +147,7 @@ $(document).ready(function(){
                             <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                             <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                             <span class="divider">|</span>
-                            <span class="wajib"><input type="checkbox" id="wajib-pgx1" name="wajib" class="wajib"><label for="wajib-pgx1" class="wajib">Wajib diisi</label></span>
+                            <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                         </div>
                     </div>
                 </div>
@@ -170,23 +168,23 @@ $(document).ready(function(){
                     <p>*Pertanyaan Pilihan Kotak Centang</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
                         
-                    <div class="edit-group">
+                    <div class="edit-group setInput">
                         <input type="checkbox" name="pilih" id="pilih1" disabled>
-                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
-                        <button id="del"><i class="fas fa-times"></i></button>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                        <button class="del"><i class="fas fa-times"></i></button>
                     </div>
 
-                    <div class="edit-group">
+                    <div class="edit-group addInput">
                         <input type="checkbox" name="pilih" id="pilih1" disabled>
-                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
-                        <button id="add-lain" class="add-lain">atau tambahkan "Lainnya"</button>
+                        <input type="text" name="opsi" class="text addOpsiCheck" placeholder="Tambah opsi">
+                        <button id="add-lain" class="add-lain addLain-check">atau tambahkan "Lainnya"</button>
                     </div>
 
                     <div class="control-edit">
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-pk1" name="wajib" class="wajib"><label for="wajib-pk1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -207,28 +205,28 @@ $(document).ready(function(){
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
                     <div class="baris">
                         <label for="">Baris</label>
-                        <div class="edit-group">
+                        <div class="edit-group setInput">
                             <input type="checkbox" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Baris">
-                            <button id="del"><i class="fas fa-times"></i></button>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                            <button class="del"><i class="fas fa-times"></i></button>
                         </div>
 
-                        <div class="edit-group">
+                        <div class="edit-group addInput">
                             <input type="checkbox" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah baris">
+                            <input type="text" name="opsi" class="text addOpsiCheck" placeholder="Tambah baris">
                         </div>
                     </div>
                     <div class="kolom">
                         <label for="">Kolom</label>
-                        <div class="edit-group">
+                        <div class="edit-group setInput">
                             <input type="checkbox" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Kolom">
-                            <button id="del"><i class="fas fa-times"></i></button>
+                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                            <button class="del"><i class="fas fa-times"></i></button>
                         </div>
 
-                        <div class="edit-group">
+                        <div class="edit-group addInput">
                             <input type="checkbox" name="pilih" id="pilih1" disabled>
-                            <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah kolom">
+                            <input type="text" name="opsi" class="text addOpsiCheck" placeholder="Tambah kolom">
                         </div>
                     </div>
 
@@ -237,7 +235,7 @@ $(document).ready(function(){
                             <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                             <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                             <span class="divider">|</span>
-                            <span class="wajib"><input type="checkbox" id="wajib-pkx1" name="wajib" class="wajib"><label for="wajib-pkx1" class="wajib">Wajib diisi</label></span>
+                            <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                         </div>
                     </div>
                 </div>
@@ -251,6 +249,8 @@ $(document).ready(function(){
 
     // Daftar Pilihan
     $("#dropDown").click(function(){
+        let ele = 0;
+        let barisHitung = ele + 1;
         $(".setup").append(`
             <div class="content adddropDown">
                 <div class="line"></div>
@@ -258,22 +258,22 @@ $(document).ready(function(){
                     <p>*Pertanyaan Pilihan Dropdown</p>
                     <input type="text" name="pilihdropdown" id="pilihdropdown" class="text" placeholder="Masukan pertanyaan Daftar Pilihan">
                         
-                    <div class="edit-group">
-                        <span id="nomor">1</span>
-                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Opsi">
-                        <button id="del"><i class="fas fa-times"></i></button>
+                    <div class="edit-group setInput">
+                        <span id="nomor" class="nomor">`+ barisHitung +`</span>
+                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                        <button class="del"><i class="fas fa-times"></i></button>
                     </div>
 
-                    <div class="edit-group">
-                        <span id="nomor">2</span>
-                        <input type="text" name="opsi" id="opsi" class="text" placeholder="Tambah opsi">
+                    <div class="edit-group addInput">
+                        <span id="nomor">*</span>
+                        <input type="text" name="opsi" class="text addOpsiNum" placeholder="Tambah opsi">
                     </div>
 
                     <div class="control-edit">
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-dd1" name="wajib" class="wajib"><label for="wajib-dd1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -397,7 +397,7 @@ $(document).ready(function(){
         $(this).parents(".addjawabPanjang").remove();
     });
 
-    $("body").on("click",".remove",function(){ 
+    $("body").on("click",".remove",function(){
         $(this).parents(".addpilihanGanda").remove();
     });
 
@@ -473,9 +473,87 @@ $(document).ready(function(){
     });
 });
 
-// Copy Text Input
+// Delete Text Input
 $(document).ready(function(){
-    $("body").on("click",".addOpsiGanda", function(){
-        $(".textpilihanGanda").clone().appendTo( $(".test") );
+    $("body").on("click",".del",function(){
+        let ele = $(this).parents(".bungkus-content").find(".nomor");
+        let barisHitung = ele.length - 1;
+        $(this).parents(".setInput").remove();
+
+        console.log("barisHitung : " +barisHitung);
     });
+});
+
+// Insert Text Input
+$(document).ready(function(){
+    // Input with radio
+    $("body").on("click",".addOpsi",function(){ 
+        $(this).parents(".addInput").before(`
+            <div class="edit-group setInput">
+                <input type="radio" name="pilih" id="pilih1" disabled>
+                <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                <button class="del"><i class="fas fa-times"></i></button>
+            </div>
+        `);
+    });
+
+    $("body").on("click",".addLain-radio",function(){ 
+        $(this).parents(".addInput").before(`
+            <div class="edit-group setInput">
+                <input type="radio" name="pilih" id="pilih1" disabled>
+                <div class="label">Lainnya :</div>
+                <input type="text" name="opsi" id="opsi" class="text lainnya">
+                <button class="del"><i class="fas fa-times"></i></button>
+            </div>
+        `);
+    });
+
+    // Input with checkbox
+    $("body").on("click",".addOpsiCheck",function(){ 
+        $(this).parents(".addInput").before(`
+            <div class="edit-group setInput">
+                <input type="checkbox" name="pilih" id="pilih1" disabled>
+                <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                <button class="del"><i class="fas fa-times"></i></button>
+            </div>
+        `);
+    });
+
+    $("body").on("click",".addLain-check",function(){ 
+        $(this).parents(".addInput").before(`
+            <div class="edit-group setInput">
+                <input type="checkbox" name="pilih" id="pilih1" disabled>
+                <div class="label">Lainnya :</div>
+                <input type="text" name="opsi" id="opsi" class="text lainnya">
+                <button class="del"><i class="fas fa-times"></i></button>
+            </div>
+        `);
+    });
+
+    // Input with number
+    $("body").on("click",".addOpsiNum",function(){
+        let ele = $(this).parents(".bungkus-content").find(".nomor");
+        let barisHitung = ele.length + 1;
+
+        $(this).parents(".addInput").before(`
+            <div class="edit-group setInput">
+                <span id="nomor" class="nomor">`+ barisHitung +`</span>
+                <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                <button class="del"><i class="fas fa-times"></i></button>
+            </div>
+        `);
+    });
+});
+
+// Add Attribute ID on wajib isi checkbox
+$(document).ready(function(){
+    $("body").on("click",".wajiblabel",function(){
+
+        if ($(this).prev().is(":checked")) {
+            $(this).prev().prop("checked", false);
+        } else {
+            $(this).prev().prop("checked", true);
+        }
+    });
+    
 });

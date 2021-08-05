@@ -513,6 +513,17 @@ nav{
     top: 25%;
 }
 
+.edit-group .label{
+    position: absolute;
+    color: #424874;
+    top: 10px;
+    left: 20px;
+}
+
+.edit-group input.lainnya{
+    text-indent: 70px !important;
+}
+
 .edit-group input[type=radio]{
     position: absolute;
     top: 25%;
