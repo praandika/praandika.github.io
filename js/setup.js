@@ -249,8 +249,6 @@ $(document).ready(function(){
 
     // Daftar Pilihan
     $("#dropDown").click(function(){
-        let ele = 0;
-        let barisHitung = ele + 1;
         $(".setup").append(`
             <div class="content adddropDown">
                 <div class="line"></div>
@@ -259,14 +257,14 @@ $(document).ready(function(){
                     <input type="text" name="pilihdropdown" id="pilihdropdown" class="text" placeholder="Masukan pertanyaan Daftar Pilihan">
                         
                     <div class="edit-group setInput">
-                        <span id="nomor" class="nomor">`+ barisHitung +`</span>
+                        <span id="nomor" class="nomor">&#9672;</span>
                         <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
                         <button class="del"><i class="fas fa-times"></i></button>
                     </div>
 
                     <div class="edit-group addInput">
-                        <span id="nomor">*</span>
-                        <input type="text" name="opsi" class="text addOpsiNum" placeholder="Tambah opsi">
+                        <span id="nomor">&#9672;</span>
+                        <input type="text" name="opsi" class="text addOpsiDaftar" placeholder="Tambah opsi">
                     </div>
 
                     <div class="control-edit">
@@ -299,7 +297,7 @@ $(document).ready(function(){
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-tg1" name="wajib" class="wajib"><label for="wajib-tg1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -325,7 +323,7 @@ $(document).ready(function(){
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-wt1" name="wajib" class="wajib"><label for="wajib-wt1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -343,15 +341,15 @@ $(document).ready(function(){
                 <div class="line"></div>
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Skala Linier</p>
-                    <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
-                    <select name="sl" id="sl" class="dropdown">
+                    <input type="text" name="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
+                    <select name="sl" class="dropdown ddA">
                         <option value="0">0</option>
                         <option value="1">1</option>
                     </select>
 
                     <span>sampai</span>
 
-                    <select name="sl" id="sl" class="dropdown">
+                    <select name="sl" class="dropdown ddB">
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -363,19 +361,19 @@ $(document).ready(function(){
                         <option value="10">10</option>
                     </select>
                     <div class="label-skala">
-                        <span id="skala-a">0</span>
-                        <input type="text" name="tanya" id="tanya" class="" placeholder="Label (optional)">
+                        <span id="skala-a" class="skala-a">0</span>
+                        <input type="text" name="tanya" class="" placeholder="Label (optional)">
                     </div>
                     <div class="label-skala">
-                        <span id="skala-b">10</span>
-                        <input type="text" name="tanya" id="tanya" class="" placeholder="Label (optional)">
+                        <span id="skala-b" class="skala-b">10</span>
+                        <input type="text" name="tanya" class="" placeholder="Label (optional)">
                     </div>
 
                     <div class="control-edit">
                         <button class="copy" type="button"><i class="fas fa-clone"></i></button>
                         <button class="remove" type="button"><i class="fas fa-trash"></i></button>
                         <span class="divider">|</span>
-                        <span class="wajib"><input type="checkbox" id="wajib-sl1" name="wajib" class="wajib"><label for="wajib-sl1" class="wajib">Wajib diisi</label></span>
+                        <span class="wajib"><input type="checkbox" name="wajib" class="wajibisi"><label class="wajiblabel">Wajib diisi</label></span>
                     </div>
                 </div>
             </div>
@@ -469,6 +467,11 @@ $(document).ready(function(){
     });
 
     $("body").on("click",".copy",function(){ 
+        let index = $(this).parents(".addskalaLinier").find(".ddA").length + 1;
+
+        // Copy Dropdown dengan nilai
+        // ubah name dinamis
+
         $(this).parents(".addskalaLinier").clone().appendTo(".setup");
     });
 });
@@ -476,13 +479,7 @@ $(document).ready(function(){
 // Delete Text Input
 $(document).ready(function(){
     $("body").on("click",".del",function(){
-        let ele = $(this).parents(".bungkus-content").find(".nomor");
-        let barisHitung = ele.length - 1;
         $(this).parents(".setInput").remove();
-
-        console.log("barisHitung : " +barisHitung);
-
-        // Saat hapus salah satu text, nomor ikut berubah sesuai urutan!
     });
 });
 
@@ -533,13 +530,10 @@ $(document).ready(function(){
     });
 
     // Input with number
-    $("body").on("click",".addOpsiNum",function(){
-        let ele = $(this).parents(".bungkus-content").find(".nomor");
-        let barisHitung = ele.length + 1;
-
+    $("body").on("click",".addOpsiDaftar",function(){
         $(this).parents(".addInput").before(`
             <div class="edit-group setInput">
-                <span id="nomor" class="nomor">`+ barisHitung +`</span>
+                <span id="nomor" class="nomor">&#9672;</span>
                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
                 <button class="del"><i class="fas fa-times"></i></button>
             </div>
@@ -558,4 +552,19 @@ $(document).ready(function(){
         }
     });
     
+});
+
+// Onchange Dropdown Skala Linear
+$(document).ready(function(){
+    $("body").on("change",".ddA",function(){
+        let va = $(this).val();
+        console.log(va);
+        $(this).parents(".bungkus-content").find(".skala-a").text(va);
+    });
+
+    $("body").on("change",".ddB",function(){
+        let va = $(this).val();
+        console.log(va);
+        $(this).parents(".bungkus-content").find(".skala-b").text(va);
+    });
 });
