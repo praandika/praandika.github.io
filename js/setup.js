@@ -482,7 +482,7 @@ $(document).ready(function(){
 
         console.log("barisHitung : " +barisHitung);
 
-        // Saat hapus salah satu text, nomor ikut berubah sesuai urutan
+        // Saat hapus salah satu text, nomor ikut berubah sesuai urutan!
     });
 });
 
