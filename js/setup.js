@@ -481,6 +481,8 @@ $(document).ready(function(){
         $(this).parents(".setInput").remove();
 
         console.log("barisHitung : " +barisHitung);
+
+        // Saat hapus salah satu text, nomor ikut berubah sesuai urutan
     });
 });
 
