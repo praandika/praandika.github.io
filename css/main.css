@@ -934,6 +934,86 @@ footer{
     background-color: rgba(245, 245, 245, 0.829);
 }
 
+/* Modal */
+.modal{
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.377);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.modal-content{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%;
+    background-color: #fff;
+    height: 320px;
+    padding: 30px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: auto;
+    display: none;
+}
+
+.modal-kepala{
+    position: sticky;
+    top: 0;
+}
+
+.list-menu-container{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+}
+
+.list-menu-container a{
+    color: rgb(29, 29, 29);
+}
+
+.label-list{
+    margin-left: 10px;
+}
+
+.close{
+    margin-top: -10px;
+    float: right;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus{
+    color: indigo;
+}
+
+.list-menu-container:hover,
+.list-menu-container:focus{
+    color: indigo;
+}
+
+.list-menu-container a:hover,
+.list-menu-container a:focus{
+    color: indigo;
+}
+
+.dpAkun{
+    text-align: center;
+}
+
+.dpAkun i{
+    font-size: 50px;
+}
+/* End Modal */
+
 /* Animation */
 @keyframes anime1 {
     0%  {left: 0px;}

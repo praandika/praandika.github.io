@@ -17,18 +17,9 @@
                 <a href="#">SET UP QUESTIONS</a>
             </div>
 
-            <div class="user">
-                <a onclick="tampilMenu()" class="userbtn"><i class="far fa-user-circle"></i></a>
+            <div class="user" id="user">
+                <a href="javascript:;" class="userbtn"><i class="far fa-user-circle"></i></a>
             </div>
-        </div>
-        <div id="menuakun" class="menu-list">
-            <div class="username">
-                <h3>Andika Cole</h3>
-            </div>
-            
-            <a href="register.html">Register</a>
-            <a href="login.html">Login</a>
-            <a href="#">Logout</a>
         </div>
     </nav>
 
@@ -52,50 +43,126 @@
         </div>
     </div>
 
-    <footer>
-        <div class="add-list">
-            <div class="add-list-content" id="jawabSingkat">
-                <i class="fas fa-grip-lines"></i>
-                Jawaban Singkat
+    <!-- Modal Question-->
+    <div class="modal" id="modalAddQuestion">
+        <div class="modal-content">
+            <div class="modal-kepala">
+                <span class="close">&times;</span>
             </div>
-            <div class="add-list-content" id="jawabPanjang">
-                <i class="fas fa-align-left"></i>
-                Jawaban Panjang
-            </div>
-            <div class="add-list-content" id="pilihanGanda">
-                <i class="far fa-dot-circle"></i>
-                Pilihan Ganda
-            </div>
-            <div class="add-list-content" id="kisiPilihanGanda">
-                <i class="fas fa-dice-four"></i>
-                Kisi Pilihan Ganda
-            </div>
-            <div class="add-list-content" id="kotakCentang">
-                <i class="fas fa-check-square"></i>
-                Kotak Centang
-            </div>
-            <div class="add-list-content" id="petakKotakCentang">
-                <i class="fas fa-th"></i>
-                Petak Kotak Centang
-            </div>
-            <div class="add-list-content" id="dropDown">
-                <i class="far fa-list-alt"></i>
-                Daftar Pilihan
-            </div>
-            <div class="add-list-content" id="tanggal">
-                <i class="far fa-calendar-alt"></i>
-                Tanggal
-            </div>
-            <div class="add-list-content" id="waktu">
-                <i class="far fa-clock"></i>
-                Waktu
-            </div>
-            <div class="add-list-content" id="skalaLinear">
-                <i class="fas fa-ellipsis-h"></i>
-                Skala Linear
+            
+            <div class="modal-badan">
+                <div class="list-menu-container" id="jawabSingkat">
+                    <i class="fas fa-grip-lines"></i>
+                        <span class="label-list">
+                            Jawaban Singkat
+                        </span>
+                </div>
+                <div class="list-menu-container" id="jawabPanjang">
+                    <i class="fas fa-align-left"></i>
+                        <span class="label-list">
+                            Jawaban Panjang
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pilihanGanda">
+                    <i class="far fa-dot-circle"></i>
+                        <span class="label-list">
+                            Pilihan Ganda
+                        </span>
+                </div>
+                <div class="list-menu-container" id="kisiPilihanGanda">
+                    <i class="fas fa-dice-four"></i>
+                        <span class="label-list">
+                            Kisi Pilihan Ganda
+                        </span>
+                </div>
+                <div class="list-menu-container" id="kotakCentang">
+                    <i class="fas fa-check-square"></i>
+                        <span class="label-list">
+                            Kotak Centang
+                        </span>
+                </div>
+                <div class="list-menu-container" id="petakKotakCentang">
+                    <i class="fas fa-th"></i>
+                        <span class="label-list">
+                            Petak Kotak Centang
+                        </span>
+                </div>
+                <div class="list-menu-container" id="dropDown">
+                    <i class="far fa-list-alt"></i>
+                        <span class="label-list">
+                            Daftar Pilihan
+                        </span>
+                </div>
+                <div class="list-menu-container" id="tanggal">
+                    <i class="far fa-calendar-alt"></i>
+                        <span class="label-list">
+                            Tanggal
+                        </span>
+                </div>
+                <div class="list-menu-container" id="waktu">
+                    <i class="far fa-clock"></i>
+                        <span class="label-list">
+                            Waktu
+                        </span>
+                </div>
+                <div class="list-menu-container" id="skalaLinear">
+                    <i class="fas fa-ellipsis-h"></i>
+                        <span class="label-list">
+                            Skala Linear
+                        </span>
+                </div>
             </div>
         </div>
+    </div>
+    <!-- END Modal -->
 
+    <!-- Modal Menu -->
+    <div class="modal" id="modalMenuAkun">
+        <div class="modal-content">
+            <div class="modal-kepala">
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-badan">
+                <div class="list-menu-container" id="username">
+                    <div class="dpAkun">
+                        <i class="far fa-smile"></i>
+                        <p>Andika</p>
+                    </div>
+                </div>
+
+                <div class="list-menu-container" id="register">
+                    <a href="register.html">
+                        <i class="fas fa-user"></i>
+                        <span class="label-list">
+                            Register
+                        </span>
+                    </a>
+                </div>
+
+                <div class="list-menu-container" id="login">
+                    <a href="login.html">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="label-list">
+                            Login
+                        </span>
+                    </a>
+                </div>
+                
+                <div class="list-menu-container" id="login">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="label-list">
+                            Logout
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
+
+    <footer>
         <div id="container-shortcut" class="shortcut">
             <div class="bottom-menu">
                 <div class="menu">
@@ -149,8 +216,8 @@
                 </a>
             </div>
 
-            <div class="menu">
-                <a onclick="tampilShortcut()">
+            <div class="menu" id="btnMenu">
+                <a href="javascript:;">
                     <i class="fas fa-bars"></i>
                     <p>Menu</p>
                 </a>
@@ -158,9 +225,8 @@
         </div>
     </footer>
     
-
-    <script src="../js/main.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/setup.js"></script>
 
 </body>

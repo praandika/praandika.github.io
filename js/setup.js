@@ -1,10 +1,33 @@
-// Pop Up Menu Add di halaman Setup
+// Pop Up Modal Add di halaman Setup
 $(document).ready(function(){
     $("#add").click(function(){
-        $(".add-list").show();
-        $("footer").css("background-color","transparent");
+        $("#modalAddQuestion").show();
+        $("#modalAddQuestion .modal-content").slideDown();
     });
 });
+
+// Hide Modal saat klik close
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
+    });
+});
+
+// Hide Modal saat klik diluar
+window.onclick = function(event) {
+    modalAdd = document.getElementById("modalAddQuestion");
+
+    modalMenu = document.getElementById("modalMenuAkun");
+
+    if (event.target == modalAdd) {
+        modalAdd.style.display = "none";
+        $("#modalAddQuestion .modal-content").slideUp();
+    }else if(event.target == modalMenu) {
+        modalMenu.style.display = "none";
+        $("#modalMenuAkun .modal-content").slideUp();
+    }
+}
 
 // Hide Pop Up menu saat klik outside content
 $(document).mouseup(function(e) {
@@ -13,7 +36,6 @@ $(document).mouseup(function(e) {
     // if the target of the click isn't the container nor a descendant of the container
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         container.hide();
-        $("footer").css("background-color","#F9F9F9");
     }
 });
 
@@ -38,11 +60,11 @@ $(document).ready(function(){
                 </div>
             </div>
         </div>
-      `);
+      `).hide().fadeIn();
         
         // Hide Pop Up Menu Add setelah pilih
-        $(".add-list").hide();
-        $("footer").css("background-color","#F9F9F9");
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
     
     // Jawab Panjang
@@ -64,11 +86,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Pilihan Ganda
@@ -100,11 +122,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Kisi Pilihan Ganda
@@ -152,11 +174,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Kotak Centang
@@ -188,11 +210,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Petak Kotak Centang
@@ -240,11 +262,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Daftar Pilihan
@@ -275,11 +297,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Tanggal
@@ -301,11 +323,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Waktu
@@ -327,11 +349,11 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 
     // Skala Linear
@@ -377,109 +399,129 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        `);
+        `).hide().fadeIn();
           
-          // Hide Pop Up Menu Add setelah pilih
-          $(".add-list").hide();
-          $("footer").css("background-color","#F9F9F9");
+        // Hide Pop Up Menu Add setelah pilih
+        $("#modalAddQuestion").fadeOut();
+        $("#modalAddQuestion .modal-content").slideUp();
     });
 });
 
 // Hapus Pertanyaan
 $(document).ready(function(){
-    $("body").on("click",".remove",function(){ 
-        $(this).parents(".addjawabSingkat").remove();
+    $("body").on("click",".remove",function(){
+        $(this).parents(".addjawabSingkat").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addjawabPanjang").remove();
+        $(this).parents(".addjawabPanjang").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){
-        $(this).parents(".addpilihanGanda").remove();
+        $(this).parents(".addpilihanGanda").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addkisipilihanGanda").remove();
+        $(this).parents(".addkisipilihanGanda").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addkotakCentang").remove();
+        $(this).parents(".addkotakCentang").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addpetakkotakCentang").remove();
+        $(this).parents(".addpetakkotakCentang").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".adddropDown").remove();
+        $(this).parents(".adddropDown").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addTanggal").remove();
+        $(this).parents(".addTanggal").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addWaktu").remove();
+        $(this).parents(".addWaktu").fadeOut(function(){
+            $(this).remove();
+        });
     });
 
     $("body").on("click",".remove",function(){ 
-        $(this).parents(".addskalaLinier").remove();
+        $(this).parents(".addskalaLinier").fadeOut(function(){
+            $(this).remove();
+        });
     });
 });
 
 // Copy Pertanyaan
 $(document).ready(function(){
     $("body").on("click",".copy",function(){
-      $(this).parents(".addjawabSingkat").clone().appendTo(".setup");
+      $(this).parents(".addjawabSingkat").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){
-        $(this).parents(".addjawabPanjang").clone().appendTo(".setup");
+        $(this).parents(".addjawabPanjang").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){
-        $(this).parents(".addpilihanGanda").clone().appendTo(".setup");
+        $(this).parents(".addpilihanGanda").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".addkisipilihanGanda").clone().appendTo(".setup");
+        $(this).parents(".addkisipilihanGanda").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".addkotakCentang").clone().appendTo(".setup");
+        $(this).parents(".addkotakCentang").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".addpetakkotakCentang").clone().appendTo(".setup");
+        $(this).parents(".addpetakkotakCentang").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".adddropDown").clone().appendTo(".setup");
+        $(this).parents(".adddropDown").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".addTanggal").clone().appendTo(".setup");
+        $(this).parents(".addTanggal").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){ 
-        $(this).parents(".addWaktu").clone().appendTo(".setup");
+        $(this).parents(".addWaktu").clone().appendTo(".setup").hide().fadeIn();
     });
 
-    $("body").on("click",".copy",function(){ 
-        let index = $(this).parents(".addskalaLinier").find(".ddA").length + 1;
+    $("body").on("click",".copy",function(){
+        $(this).parents(".addskalaLinier").clone().appendTo(".setup").hide().fadeIn();
 
-        // Copy Dropdown dengan nilai
-        // ubah name dinamis
-
-        $(this).parents(".addskalaLinier").clone().appendTo(".setup");
+        // Belum sempurna saat copy ke dua
+        $(".ddA option[value='" + $(".ddA").val() + "'] , .ddB option[value='" + $(".ddB").val() + "']").attr("selected","selected");
     });
 });
 
 // Delete Text Input
 $(document).ready(function(){
     $("body").on("click",".del",function(){
-        $(this).parents(".setInput").remove();
+        $(this).parents(".setInput").fadeOut(function(){
+            $(this).remove();
+        });
     });
 });
 
