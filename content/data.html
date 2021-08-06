@@ -18,24 +18,15 @@
                 <a href="#">Data {}</a>
             </div>
 
-            <div class="user">
-                <a onclick="tampilMenu()" class="userbtn"><i class="far fa-user-circle"></i></a>
+            <div class="user" id="user">
+                <a href="javascript:;" class="userbtn"><i class="far fa-user-circle"></i></a>
             </div>
-        </div>
-        <div id="menuakun" class="menu-list">
-            <div class="username">
-                <h3>Andika Cole</h3>
-            </div>
-            
-            <a href="content/register.html">Register</a>
-            <a href="content/login.html">Login</a>
-            <a href="#">Logout</a>
         </div>
     </nav>
     
     <div class="container">
         <div class="row-content">
-            <div class="data-content">
+            <div class="data-content fadeInAtas">
                 <div>
                     <table id="dataTable" class="data-table">
                         <thead>
@@ -88,6 +79,52 @@
         </div>
     </div>
 
+        <!-- Modal Menu -->
+        <div class="modal" id="modalMenuAkun">
+            <div class="modal-content">
+                <div class="modal-kepala">
+                    <span class="close">&times;</span>
+                </div>
+    
+                <div class="modal-badan">
+                    <div class="profile" id="username">
+                        <div class="dpAkun">
+                            <i class="far fa-smile"></i>
+                            <p>Andika</p>
+                        </div>
+                    </div>
+    
+                    <a href="register.html">
+                        <div class="list-menu-container" id="register">
+                            <i class="fas fa-user"></i>
+                            <span class="label-list">
+                                Register
+                            </span>
+                        </div>
+                    </a>
+    
+                    <a href="login.html">
+                        <div class="list-menu-container" id="login">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="label-list">
+                                Login
+                            </span>
+                        </div>
+                    </a>
+    
+                    <a href="#">
+                        <div class="list-menu-container" id="login">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="label-list">
+                                Logout
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END Modal -->
+
     <footer>
         <div class="bottom-menu">
             <div class="menu">
@@ -120,9 +157,8 @@
         </div>
     </footer>
     
-    
-    <script src="../js/main.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
     <script type="text/javascript" src="../js/datatables.min.js"></script>
     <script>
         $(document).ready( function () {

@@ -17,24 +17,15 @@
                 <a href="#">TITLE</a>
             </div>
 
-            <div class="user">
-                <a onclick="tampilMenu()" class="userbtn"><i class="far fa-user-circle"></i></a>
+            <div class="user" id="user">
+                <a href="javascript:;" class="userbtn"><i class="far fa-user-circle"></i></a>
             </div>
-        </div>
-        <div id="menuakun" class="menu-list">
-            <div class="username">
-                <h3>Andika Cole</h3>
-            </div>
-            
-            <a href="content/register.html">Register</a>
-            <a href="content/login.html">Login</a>
-            <a href="#">Logout</a>
         </div>
     </nav>
     
     <div class="container">
         <div class="row-menu-2">
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKiri">
                 <a href="content/add.html">
                     <h3>
                         <i class="fas fa-plus-circle"></i>
@@ -44,7 +35,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInAtas">
                 <a href="content/quesioner.html">
                     <h3>
                         <i class="fas fa-eye"></i>
@@ -54,7 +45,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKanan">
                 <a href="content/result.html">
                     <h3>
                         <i class="fas fa-poll"></i>
@@ -67,7 +58,7 @@
         </div>
 
         <div class="row-menu-2">
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKiri">
                 <a href="content/add.html">
                     <h3>
                         <i class="fas fa-plus-circle"></i>
@@ -77,7 +68,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInAtas">
                 <a href="content/quesioner.html">
                     <h3>
                         <i class="fas fa-eye"></i>
@@ -87,7 +78,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKanan">
                 <a href="content/result.html">
                     <h3>
                         <i class="fas fa-poll"></i>
@@ -100,7 +91,7 @@
         </div>
 
         <div class="row-menu-2">
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKiri">
                 <a href="content/add.html">
                     <h3>
                         <i class="fas fa-plus-circle"></i>
@@ -110,7 +101,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInAtas">
                 <a href="content/quesioner.html">
                     <h3>
                         <i class="fas fa-eye"></i>
@@ -120,7 +111,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKanan">
                 <a href="content/result.html">
                     <h3>
                         <i class="fas fa-poll"></i>
@@ -133,7 +124,7 @@
         </div>
 
         <div class="row-menu-2">
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKiri">
                 <a href="content/add.html">
                     <h3>
                         <i class="fas fa-plus-circle"></i>
@@ -143,7 +134,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInAtas">
                 <a href="content/quesioner.html">
                     <h3>
                         <i class="fas fa-eye"></i>
@@ -153,7 +144,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKanan">
                 <a href="content/result.html">
                     <h3>
                         <i class="fas fa-poll"></i>
@@ -166,7 +157,7 @@
         </div>
 
         <div class="row-menu-2">
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKiri">
                 <a href="content/add.html">
                     <h3>
                         <i class="fas fa-plus-circle"></i>
@@ -176,7 +167,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInAtas">
                 <a href="content/quesioner.html">
                     <h3>
                         <i class="fas fa-eye"></i>
@@ -186,7 +177,7 @@
                     </div>
                 </a>
             </div>
-            <div class="main-menu-2">
+            <div class="main-menu-2 fadeInKanan">
                 <a href="content/result.html">
                     <h3>
                         <i class="fas fa-poll"></i>
@@ -199,6 +190,52 @@
         </div>
     </div>
 
+    <!-- Modal Menu -->
+    <div class="modal" id="modalMenuAkun">
+        <div class="modal-content">
+            <div class="modal-kepala">
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-badan">
+                <div class="profile" id="username">
+                    <div class="dpAkun">
+                        <i class="far fa-smile"></i>
+                        <p>Andika</p>
+                    </div>
+                </div>
+
+                <a href="register.html">
+                    <div class="list-menu-container" id="register">
+                        <i class="fas fa-user"></i>
+                        <span class="label-list">
+                            Register
+                        </span>
+                    </div>
+                </a>
+
+                <a href="login.html">
+                    <div class="list-menu-container" id="login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="label-list">
+                            Login
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="list-menu-container" id="login">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="label-list">
+                            Logout
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
+
     <footer>
         <div class="bottom-menu">
             <div class="menu"><a href="content/add.html"><i class="fas fa-plus-circle"></i></a></div>
@@ -208,7 +245,7 @@
         </div>
     </footer>
     
-    
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

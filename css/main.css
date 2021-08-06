@@ -96,6 +96,7 @@ input[type=checkbox]{
     outline: none;
     border: none;
     font-size: 15px;
+    transition: 0.2s ease;
 }
 
 .tombol-md{
@@ -103,6 +104,7 @@ input[type=checkbox]{
     outline: none;
     border: none;
     font-size: 15px;
+    transition: 0.2s ease;
 }
 
 .tombol-block{
@@ -112,6 +114,14 @@ input[type=checkbox]{
     outline: none;
     border: none;
     font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.tombol:hover,
+.tombol-md:hover,
+.tombol-block:hover{
+    margin-top: -3px;
+    margin-bottom: 3px;
 }
 
 .bunder{
@@ -972,6 +982,7 @@ footer{
     cursor: pointer;
     color: rgb(29, 29, 29);
     font-weight: bold;
+    transition: 0.5s ease;
 }
 
 .list-menu-container a{
@@ -992,16 +1003,33 @@ footer{
 
 .close:hover,
 .close:focus{
-    color: indigo;
+    color: #c22853;
 }
 
 .list-menu-container:hover,
 .list-menu-container:focus{
     color: indigo;
+    margin-left: 10px;
 }
 
 .list-menu-container a:hover,
 .list-menu-container a:focus{
+    color: indigo;
+}
+
+.profile{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.profile:hover,
+.profile.focus{
+    margin-top: -10px;
+    margin-bottom: 10px;
     color: indigo;
 }
 
@@ -1014,7 +1042,91 @@ footer{
 }
 /* End Modal */
 
+/* Transition */
+.fadeInAtas{
+    animation-name: fadeInAtas;
+    animation-duration: 1s;
+}
+
+.fadeInKiri{
+    animation-name: fadeInKiri;
+    animation-duration: 1s;
+}
+
+.fadeInKanan{
+    animation-name: fadeInKanan;
+    animation-duration: 1s;
+}
+
+.fadeInBawah{
+    animation-name: fadeInBawah;
+    animation-duration: 1s;
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
 /* Animation */
+@keyframes fadeInAtas {
+    from{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInKiri {
+    from{
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInKanan {
+    from{
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBawah {
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 @keyframes anime1 {
     0%  {left: 0px;}
     25% {left: 50px;}
@@ -1195,6 +1307,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 20px;
+    }
+
+    .dpAkun i{
+        font-size: 50px;
+    }
+    /* End Modal */
 }
 
 /* Ukuran Smartphone S */
@@ -1357,6 +1499,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 20px;
+    }
+
+    .dpAkun i{
+        font-size: 50px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 320px) and (min-width: 314px) {
@@ -1518,6 +1690,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 20px;
+    }
+
+    .dpAkun i{
+        font-size: 50px;
+    }
+    /* End Modal */
 }
 
 /* Ukuran Smartphone M */
@@ -1681,6 +1883,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 50px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 375px) and (min-width: 348px) {
@@ -1841,6 +2073,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 50px;
+    }
+    /* End Modal */
 }
 
 /* Ukuran Smartphone L */
@@ -2003,6 +2265,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 440px) and (min-width: 420px) {
@@ -2164,6 +2456,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 479px) and (min-width: 441px) {
@@ -2325,6 +2647,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 480px) and (min-width: 480px) {
@@ -2486,6 +2838,36 @@ footer{
     .edit-group button.add-lain{
         position: unset;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 30px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 /* Ukuran Tab */
@@ -2621,6 +3003,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 559px) and (min-width: 500px) {
@@ -2755,6 +3167,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 619px) and (min-width: 560px) {
@@ -2889,6 +3331,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 679px) and (min-width: 620px) {
@@ -3023,6 +3495,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 707px) and (min-width: 680px) {
@@ -3157,6 +3659,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 753px) and (min-width: 708px) {
@@ -3291,6 +3823,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 789px) and (min-width: 754px) {
@@ -3425,6 +3987,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 799px) and (min-width: 790px) {
@@ -3559,6 +4151,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 800px) and (min-width: 800px) {
@@ -3693,6 +4315,36 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
+
+    /* Modal */
+    .modal-content{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        height: 320px;
+        padding: 40px 80px;
+    }
+
+    .label-list{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .close{
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .dpAkun i{
+        font-size: 55px;
+    }
+    /* End Modal */
 }
 
 /* Ukuran Tab 2 */
@@ -4236,6 +4888,13 @@ footer{
     .bottom-menu{
         width: 50%;
     }
+
+    /* Modal */
+    .modal-content{
+        width: 50%;
+        margin-left: -25%;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 1024px) and (min-width: 1000px){
@@ -4290,6 +4949,13 @@ footer{
     .bottom-menu{
         width: 50%;
     }
+
+    /* Modal */
+    .modal-content{
+        width: 50%;
+        margin-left: -25%;
+    }
+    /* End Modal */
 }
 
 /* Laptop L Ukuran 1220 */
@@ -4404,6 +5070,13 @@ footer{
         width: 50%;
         font-size: 20px;
     }
+
+    /* Modal */
+    .modal-content{
+        width: 50%;
+        margin-left: -25%;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 1220px) and (min-width: 1120px){
@@ -4517,6 +5190,13 @@ footer{
         width: 50%;
         font-size: 20px;
     }
+
+    /* Modal */
+    .modal-content{
+        width: 50%;
+        margin-left: -25%;
+    }
+    /* End Modal */
 }
 
 @media screen and (max-width: 1299px) and (min-width: 1220px){
@@ -5040,6 +5720,10 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 1799px) and (min-width: 1650px){
@@ -5161,6 +5845,10 @@ footer{
     .content{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    button{
+        margin-left: 10px;
     }
 }
 
@@ -5284,6 +5972,10 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 2099px) and (min-width: 1950px){
@@ -5405,6 +6097,10 @@ footer{
     .content{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    button{
+        margin-left: 10px;
     }
 }
 
@@ -5528,6 +6224,10 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 2399px) and (min-width: 2250px){
@@ -5649,6 +6349,10 @@ footer{
     .content{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    button{
+        margin-left: 10px;
     }
 }
 
@@ -5772,6 +6476,10 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    button{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 2560px) and (min-width: 2550px){
@@ -5893,5 +6601,9 @@ footer{
     .content{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    button{
+        margin-left: 10px;
     }
 }
