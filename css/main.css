@@ -791,13 +791,6 @@ footer{
     font-size: 14px;
 }
 
-.form button{
-    margin-top: 30px;
-    width: 100%;
-    border-radius: 50px;
-    font-weight: bold;
-}
-
 .form .register-link{
     margin-top: 20px;
     text-align: right;
