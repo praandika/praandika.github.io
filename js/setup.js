@@ -1,4 +1,4 @@
-// Pop Up Modal Add di halaman Setup
+// Pop Up Modal Add di halaman Setup.
 $(document).ready(function(){
     $("#add").click(function(){
         $("#modalAddQuestion").show();
