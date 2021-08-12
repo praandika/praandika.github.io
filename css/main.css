@@ -474,6 +474,76 @@ nav{
     margin: 0;
 }
 
+.title-jawaban{
+    width: 80%;
+    float: left;
+}
+
+.tools{
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+
+.tools span{
+    color: rgb(145, 163, 163);
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.tools span:hover,
+.tools span:focus{
+    color: #424874;
+}
+
+.tools span h2{
+    display: inline-block;
+}
+
+abbr{
+    color: transparent;
+}
+
+/* Navigasi TAB */
+.tab-container{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #DCD6F7;
+}
+
+.tab li{
+    margin-top: 30px;
+    list-style: none;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+.tab-content .judul-jawaban{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+/* END Navigasi TAB */
+
+/* Chart Container */
+.chart-container{
+    overflow: auto;
+}
+/* END Chart Container */
+
+/* Bungkus Jawaban */
+.bungkus-jawaban{
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+/* END Bungkus Jawaban */
+
 .bungkus-content{
     padding: 10px 20px 10px 20px;
 }
