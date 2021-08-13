@@ -467,6 +467,14 @@ nav{
     overflow: hidden;
 }
 
+.content2{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #DCD6F7;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
 .line{
     background-color: #424874;
     height: 10px;
@@ -535,6 +543,79 @@ abbr{
 }
 /* END Chart Container */
 
+/* Style Result Tanggal dan Waktu */
+.chart-container-float{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.chart-container-float .kiri{
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding: 10px;
+}
+
+.chart-container-float .kanan{
+    float: right;
+    width: 70%;
+    padding: 10px;
+    border-left: 2px solid #424874;
+}
+
+.result-kotak{
+    position: relative;
+    background-color: #e7eaff;
+    width: 60px;
+    border-radius: 20px;
+    padding: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.result-kotak-wkt{
+    position: relative;
+    background-color: #e7eaff;
+    width: 75px;
+    border-radius: 20px;
+    padding: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.tglwkt{
+    padding-left: 5px;
+}
+
+.jumlah{
+    position: absolute;
+    width: 25px;
+    border-radius: 10px;
+    background-color:#fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin: 3px;
+}
+
+.menit{
+    display: inline-block;
+    width: 20px;
+    border-bottom: 2px solid #424874;
+}
+
+.most{
+    background-color: #424874;
+    color: #fff;
+}
+
+.most .jumlah{
+    background-color: #b6cfee;
+    color: #424874;
+}
+/* END Style Result Tanggal dan Waktu */
+
 /* Bungkus Jawaban */
 .bungkus-jawaban{
     margin: 5px 0px;
@@ -543,6 +624,14 @@ abbr{
     background-color: #f7f7f7;
 }
 /* END Bungkus Jawaban */
+
+.normal-weight{
+    font-weight: normal;
+}
+
+.bungkus-content .jawaban{
+    padding: 10px 0px;
+}
 
 .bungkus-content{
     padding: 10px 20px 10px 20px;

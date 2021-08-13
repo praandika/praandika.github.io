@@ -1,11 +1,10 @@
 // Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
-google.charts.load('current', {'packages':['bar']});
+google.charts.load('current', {'packages':['corechart','bar']});
 
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(chartJawabSingkat);
 google.charts.setOnLoadCallback(chartPilihanGanda);
-google.charts.setOnLoadCallback(chartPetakKotakCentang);
+google.charts.setOnLoadCallback(chartKotakCentang);
 google.charts.setOnLoadCallback(chartDropdown);
 google.charts.setOnLoadCallback(chartSkalaLinier);
 google.charts.setOnLoadCallback(chartKisiPilihanGanda);
@@ -76,7 +75,7 @@ function chartPilihanGanda() {
 }
 
 // Petak Kotak Centang
-function chartPetakKotakCentang() {
+function chartKotakCentang() {
 
     // Create the data table.
     var data = google.visualization.arrayToDataTable([
@@ -106,7 +105,7 @@ function chartPetakKotakCentang() {
     };
 
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.BarChart(document.getElementById('chart_petakKotakCentang'));
+    var chart = new google.visualization.BarChart(document.getElementById('chart_kotakCentang'));
     chart.draw(view, options);
 }
 
@@ -184,11 +183,11 @@ function chartKisiPilihanGanda() {
 
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.charts.Bar(document.getElementById('chart_kisiPilihanGanda'));
-    chart.draw(data, google.charts.Bar.convertOptions(options));
+    chart.draw(data, options);
 }
 
 // Kisi Pilihan Ganda
-function chartPetak() {
+function chartPetakKotakCentang() {
 
     // Create the data table.
     var data = google.visualization.arrayToDataTable([
@@ -206,6 +205,6 @@ function chartPetak() {
     };
 
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.charts.Bar(document.getElementById('chart_petak'));
-    chart.draw(data, google.charts.Bar.convertOptions(options));
+    var chart = new google.charts.Bar(document.getElementById('chart_petakKotakCentang'));
+    chart.draw(data, options);
 }
