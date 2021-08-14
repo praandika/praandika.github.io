@@ -20,12 +20,17 @@ window.onclick = function(event) {
 
     modalMenu = document.getElementById("modalMenuAkun");
 
+    modalPertanyaan = document.getElementById("modalPilihPertanyaan");
+
     if (event.target == modalAdd) {
         modalAdd.style.display = "none";
         $("#modalAddQuestion .modal-content").slideUp();
     }else if(event.target == modalMenu) {
         modalMenu.style.display = "none";
         $("#modalMenuAkun .modal-content").slideUp();
+    }else if(event.target == modalPertanyaan) {
+        modalPertanyaan.style.display = "none";
+        $("#modalPilihPertanyaan .modal-content").slideUp();
     }
 }
 

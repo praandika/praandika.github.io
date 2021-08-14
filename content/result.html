@@ -43,14 +43,14 @@
                     </abbr>
                 </div>
             
-                <ul class="tab">
-                    <li><a href="#sum">Summary</a></li>
-                    <li><a href="#question">Question</a></li>
-                    <li><a href="#individual">Individual</a></li>
+                <ul id="tab" class="tab">
+                    <li><a id="sum">Summary</a></li>
+                    <li><a id="question">Question</a></li>
+                    <li><a id="individual">Individual</a></li>
                 </ul>
             </div>
             
-            <div class="tab-content" id="sum">
+            <div class="tab-content" id="sumContent">
                 <div class="content">
                     <div class="bungkus-content">
                         <h4 class="judul-jawaban">Text Jawaban Singkat</h4>
@@ -311,19 +311,39 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
-            <div class="tab-content" id="question">
+            <div class="tab-content" id="questionContent">
+
+                <!-- Page Navigation -->
                 <div class="content2">
-                    <div class="bungkus-content">
-                        Navigasi page number
+                    <div class="page-nav-header">
+                        <button id="pilihpertanyaan" class="btnpilihpertanyaan">
+                            <i class="fas fa-caret-down"></i>
+                            Pertanyaan pertama Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, hic omnis numquam perspiciatis?
+                        </button>
+                        <button class="page">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <span class="page-number">
+                            <span class="dinamis">
+                                1
+                            </span>
+                            <span>
+                                from
+                            </span>
+                            <span class="total-page">
+                                10
+                            </span>
+                        </span>
+                        <button class="page">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
 
                 <!-- Jawab Singkat -->
-                <div id="resultjawabSingkat">
+                <div id="p1">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Text Jawab Singkat</h3>
@@ -374,7 +394,7 @@
                 </div>
                 
                 <!-- Jawab Panjang / Paragraf -->
-                <div id="resultJawabPanjang">
+                <div id="p2">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Text Jawab Panjang / Paragraf</h3>
@@ -404,7 +424,7 @@
                 </div>
 
                 <!-- Jawaban Pilihan Ganda -->
-                <div id="resultPilihanGanda">
+                <div id="p3">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Pilihan Ganda</h3>
@@ -444,7 +464,7 @@
                 </div>
 
                 <!-- Jawaban Kotak Centang -->
-                <div id="resultKotakCentang">
+                <div id="p4">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Kotak Centang</h3>
@@ -516,7 +536,7 @@
                 </div>
                 
                 <!-- Jawaban Dropdown -->
-                <div id="resultDropdown">
+                <div id="p5">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Dropdown</h3>
@@ -554,7 +574,7 @@
                 </div>
 
                 <!-- Jawaban Skala Linier -->
-                <div id="resultSkalaLinier">
+                <div id="p6">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Skala Linier</h3>
@@ -629,7 +649,7 @@
                 </div>
 
                 <!-- Jawaban Skala Linier Versi 2 -->
-                <div id="resultSkalaLinier">
+                <div id="p7">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Skala Linier Versi 2</h3>
@@ -716,7 +736,7 @@
                 </div>
 
                 <!-- Jawaban Kisi Pilihan Ganda -->
-                <div id="resultSkalaLinier">
+                <div id="p8">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Kisi Pilihan Ganda</h3>
@@ -758,7 +778,7 @@
                 </div>
 
                 <!-- Jawaban Petak Kotak Centang -->
-                <div id="resultSkalaLinier">
+                <div id="p9">
                     <div class="content2">
                         <div class="bungkus-content">
                             <h3>Pertanyaan Petak Kotak Centang</h3>
@@ -813,9 +833,693 @@
                     </div>
                 </div>
 
+                <!-- Jawaban Tanggal -->
+                <div id="p10">
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <h3>Pertanyaan Tanggal</h3>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <table class="jawaban">
+                                <tr>
+                                    <td>DD</td>
+                                    <td>MM</td>
+                                    <td>YYYY</td>
+                                </tr>
+                                <tr>
+                                    <td>07 /</td>
+                                    <td>08 /</td>
+                                    <td>2021</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <p class="jawaban">2 Jawaban</p>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <table class="jawaban">
+                                <tr>
+                                    <td>DD</td>
+                                    <td>MM</td>
+                                    <td>YYYY</td>
+                                </tr>
+                                <tr>
+                                    <td>12 /</td>
+                                    <td>09 /</td>
+                                    <td>2021</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <p class="jawaban">3 Jawaban</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jawaban Waktu -->
+                <div id="p11">
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <h3>Pertanyaan Waktu</h3>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Waktu</p>
+                            <p class="jawaban">
+                                08 . 30 AM
+                            </p>
+                            <hr>
+                            <p class="jawaban">2 Jawaban</p>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Waktu</p>
+                            <p class="jawaban">
+                                14 . 30
+                            </p>
+                            <hr>
+                            <p class="jawaban">3 Jawaban</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Navigation -->
+                <div class="content2">
+                    <div class="page-nav-footer">
+                        <button class="page">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="page">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="individualContent">
+                <!-- Page Navigation -->
+                <div class="content2">
+                    <div class="page-nav-header">
+                        <div class="container-float">
+                            <div class="page-nav-kiri">
+                                <button class="page">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <span class="page-number">
+                                    <span class="dinamis">
+                                        1
+                                    </span>
+                                    <span>
+                                        from
+                                    </span>
+                                    <span class="total-page">
+                                        10
+                                    </span>
+                                </span>
+                                <button class="page">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="page-nav-kanan">
+                                <button class="page">
+                                    <h2><i class="fas fa-print"></i></h2>
+                                </button>
+                                <button class="page">
+                                    <h2><i class="fas fa-trash-alt"></i></h2>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Judul Quesioner -->
+                <div class="content2">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <p style="color: rgb(158, 158, 158);"><i>Jawaban tidak dapat diedit</i></p>
+                        <h2>Judul Quesioner</h2>
+                    </div>
+                </div>
+
+                <div id="pi1">
+                    <!-- Jawab Singkat -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedua Jawab Singkat</p>
+                            <br>
+                            <div class="bungkus-jawaban-singkat">
+                                Jawaban Singkat
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jawab Panjang/Paragraf -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedua Jawab Panjang</p>
+                            <br>
+                            <div class="bungkus-jawaban-panjang">
+                                Jawaban Panjang
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pilihan Ganda -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Ketiga Pilihan Ganda</p>
+                            <br>
+                        
+                            <p>
+                                <input type="radio" disabled>
+                                <label for="pilih1">Opsi 1</label>
+                            </p>
+                            <p>
+                                <input type="radio" checked="checked" readonly>
+                                <label for="pilih2">Opsi 2</label>
+                            </p>
+                            <p>
+                                <input type="radio" disabled>
+                                <label for="pilih3">Opsi 3</label>
+                            </p>
+                            <p>
+                                <input type="radio" disabled>
+                                <label>
+                                    Yang Lain :
+                                </label>
+                                <input type="text">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Kotak Centang -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Keempat Kotak Centang</p>
+                            <br>
+                        
+                            <p>
+                                <input type="checkbox" disabled>
+                                <label for="cek1">
+                                    Opsi 1
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" disabled>
+                                <label for="cek2">
+                                    Opsi 2
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" disabled>
+                                <label for="cek3">
+                                    Opsi 3
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" checked="checkbox" disabled>
+                                <label>
+                                    Yang Lain :
+                                </label>
+                                <input type="text" value="Jawaban Lain" readonly>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kelima Dropdown</p>
+                            <br>
+                            <select class="dropdown" disabled>
+                                <option value="Opsi 1">Opsi 1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Skala Linier 1 -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Keenam Skala Linier 1</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Skala Linier 2 -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Ketujuh Skala Linier 2</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><span>Label A</span></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td><span>Label B</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Kisi Pilihan Ganda -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedelapan Kisi Pilihan Ganda</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>Kolom 1</th>
+                                    <th>Kolom 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Baris 1</td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td>Baris 2</td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Petak Kotak Centang -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesembilan Petak Kotak Centang</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>Kolom 1</th>
+                                    <th>Kolom 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Baris 1</td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                    <td class="text-center"><input type="checkbox" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td>Baris 2</td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan Tanggal -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesepuluh Tanggal</p>
+                            <br>
+                            <table class="jawaban">
+                                <tr>
+                                    <td>DD</td>
+                                    <td>MM</td>
+                                    <td>YYYY</td>
+                                </tr>
+                                <tr>
+                                    <td>07 /</td>
+                                    <td>08 /</td>
+                                    <td>2021</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan Waktu -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesebelas Waktu</p>
+                            <br>
+                            <p class="jawaban">
+                                08 . 30 AM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pi2">
+                    <!-- Jawab Singkat -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedua Jawab Singkat</p>
+                            <br>
+                            <div class="bungkus-jawaban-singkat">
+                                Jawaban Singkat 2
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jawab Panjang/Paragraf -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedua Jawab Panjang</p>
+                            <br>
+                            <div class="bungkus-jawaban-panjang">
+                                Jawaban Panjang 2
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pilihan Ganda -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Ketiga Pilihan Ganda</p>
+                            <br>
+                        
+                            <p>
+                                <input type="radio" disabled>
+                                <label for="pilih1">Opsi 1</label>
+                            </p>
+                            <p>
+                                <input type="radio" disabled>
+                                <label for="pilih2">Opsi 2</label>
+                            </p>
+                            <p>
+                                <input type="radio" disabled>
+                                <label for="pilih3">Opsi 3</label>
+                            </p>
+                            <p>
+                                <input type="radio" checked="checked" readonly>
+                                <label>
+                                    Yang Lain :
+                                </label>
+                                <input type="text">
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Kotak Centang -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Keempat Kotak Centang</p>
+                            <br>
+                        
+                            <p>
+                                <input type="checkbox" checked="checkbox" disabled>
+                                <label for="cek1">
+                                    Opsi 1
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" disabled>
+                                <label for="cek2">
+                                    Opsi 2
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" disabled>
+                                <label for="cek3">
+                                    Opsi 3
+                                </label>
+                            </p>
+        
+                            <p>
+                                <input type="checkbox" checked="checkbox" disabled>
+                                <label>
+                                    Yang Lain :
+                                </label>
+                                <input type="text" value="Jawaban Lain" readonly>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kelima Dropdown</p>
+                            <br>
+                            <select class="dropdown" disabled>
+                                <option value="Opsi 2">Opsi 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Skala Linier 1 -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Keenam Skala Linier 1</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Skala Linier 2 -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Ketujuh Skala Linier 2</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><span>Label A</span></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                    <td><span>Label B</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Kisi Pilihan Ganda -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kedelapan Kisi Pilihan Ganda</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>Kolom 1</th>
+                                    <th>Kolom 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Baris 1</td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td>Baris 2</td>
+                                    <td class="text-center"><input type="radio" checked="checked" readonly></td>
+                                    <td class="text-center"><input type="radio" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Petak Kotak Centang -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesembilan Petak Kotak Centang</p>
+                            <br>
+                            <table class="pilihan-gandav2">
+                                <tr class="text-center">
+                                    <th></th>
+                                    <th>Kolom 1</th>
+                                    <th>Kolom 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Baris 1</td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td>Baris 2</td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                    <td class="text-center"><input type="checkbox" checked="checked" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan Tanggal -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesepuluh Tanggal</p>
+                            <br>
+                            <table class="jawaban">
+                                <tr>
+                                    <td>DD</td>
+                                    <td>MM</td>
+                                    <td>YYYY</td>
+                                </tr>
+                                <tr>
+                                    <td>25 /</td>
+                                    <td>10 /</td>
+                                    <td>2021</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan Waktu -->
+                    <div class="content2">
+                        <div class="bungkus-content">
+                            <p>Pertanyaan Kesebelas Waktu</p>
+                            <br>
+                            <p class="jawaban">
+                                14 . 20
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <!-- Modal Question-->
+    <div class="modal" id="modalPilihPertanyaan">
+        <div class="modal-content">
+            <div class="modal-kepala">
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-badan">
+                <div class="list-menu-container">
+                    <span class="label-list">
+                        Pilih Pertanyaan
+                    </span>
+                </div>
+                <hr>
+                <div class="list-menu-container" id="pid1">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Pertama
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid2">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kedua
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid3">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Ketiga
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid4">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Keempat
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid5">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kelima
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid6">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Keenam
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid7">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Ketujuh
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid8">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kedelapan
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid9">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kesembilan
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid10">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kesepuluh
+                        </span>
+                </div>
+                <div class="list-menu-container" id="pid11">
+                    <i class="fas fa-caret-right"></i>
+                        <span class="label-list">
+                            Pertanyaan Kesebelas
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
 
     <!-- Modal Menu -->
     <div class="modal" id="modalMenuAkun">
@@ -897,5 +1601,6 @@
     
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/result.js"></script>
 </body>
 </html>

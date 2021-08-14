@@ -272,6 +272,10 @@ nav{
     position: relative;
 }
 
+.container-float{
+    overflow: hidden;
+}
+
 .container a{
     color: #424874;
 }
@@ -535,6 +539,10 @@ abbr{
     font-weight: normal;
     margin-bottom: 5px;
 }
+
+.tab li a{
+    cursor: pointer;
+}
 /* END Navigasi TAB */
 
 /* Chart Container */
@@ -624,6 +632,72 @@ abbr{
     background-color: #f7f7f7;
 }
 /* END Bungkus Jawaban */
+
+/* Page Navigatioin */
+.page-nav-header{
+    padding: 10px;
+}
+
+.page-nav-footer{
+    text-align: right;
+    padding: 10px;
+}
+
+.page{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    color: slategray;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.page:hover,
+.page:focus{
+    background-color: rgb(232, 245, 255);
+}
+
+.page-nav-kiri{
+   float: left;
+   width: 70%;
+}
+
+.page-nav-kanan{
+   float: right;
+   width: 30%;
+   text-align: right;
+}
+
+.btnpilihpertanyaan{
+    border: 2px solid #f4f5ff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    padding: 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* END Page Navigation */
+
+.bungkus-jawaban-singkat{
+    border-bottom: 1px dotted slategray;
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 5px 0px;
+}
+
+.bungkus-jawaban-panjang{
+    border-bottom: 1px dotted slategray;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
 
 .normal-weight{
     font-weight: normal;
