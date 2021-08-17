@@ -52,3 +52,9 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    let num = 1;
+    let count = $(document).find(".p").length;
+    console.log(count);
+});

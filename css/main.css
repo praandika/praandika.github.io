@@ -347,6 +347,14 @@ nav{
     position: relative;
 }
 
+.rounded{
+    border-radius: 20px !important;
+}
+
+.more-rounded{
+    border-radius: 50px !important;
+}
+
 .card p{
     margin-bottom: 20px;
     font-size: 10px;
@@ -1293,6 +1301,42 @@ footer{
     animation-name: fadeIn;
     animation-duration: 3s;
 }
+
+/* Doc PAGE */
+.container-content{
+    overflow: hidden;
+    padding: 20px;
+}
+
+.sidebar{
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #424874;
+    color: #fff;
+    overflow: hidden;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar a:hover{
+    background-color: #87A8D0;
+}
+
+.content-kanan{
+    float: right;
+    width: 80%;
+}
+/* END Doc PAGE */
 
 /* Animation */
 @keyframes fadeInAtas {
