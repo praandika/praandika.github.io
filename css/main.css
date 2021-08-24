@@ -19,6 +19,10 @@ a{
     text-align: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #F9F9F9;
 }
@@ -454,6 +458,32 @@ nav{
     font-weight: bold;
 }
 /* END CARD-BLOCK */
+
+/* CARD TEXT */
+.card-text{
+    display: inline-block;
+    padding: 25px;
+    margin: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.card-text-block{
+    display: inline-block;
+    padding: 25px;
+    margin: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 98%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+/* END CARD-TEXT */
 
 .menu-label{
     word-wrap: break-word;
@@ -1545,6 +1575,21 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 4px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        width: 96%;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    /* END CARD TEXT */
+
     .mobile-nav{
         width: 100%;
         margin: 0 auto;
@@ -1737,6 +1782,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 5px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* END CARD TEXT */
+    
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -1927,6 +1986,20 @@ footer{
         font-size: 25px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
 
     .mobile-nav{
         font-size: 20px;
@@ -2121,6 +2194,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
+
     .mobile-nav{
         font-size: 20px;
         width: 100%;
@@ -2310,6 +2397,22 @@ footer{
         font-size: 30px;
     }
     /* END CARD-BLOCK */
+
+    /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* END CARD TEXT */
 
     .mobile-nav{
         font-size: 20px;
@@ -2503,6 +2606,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* END CARD TEXT */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -2693,6 +2810,20 @@ footer{
         font-size: 35px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
 
     .mobile-nav{
         font-size: 25px;
@@ -2885,6 +3016,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -3076,6 +3221,21 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /* END CARD TEXT */
+    
+
     .mobile-nav{
         font-size: 25px;
         width: 100%;
@@ -3263,6 +3423,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -3426,6 +3600,20 @@ footer{
         font-size: 45px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         width: 80%;
@@ -3591,6 +3779,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -3754,6 +3956,20 @@ footer{
         font-size: 45px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 9px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         width: 80%;
@@ -3919,6 +4135,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 10px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -4082,6 +4312,20 @@ footer{
         font-size: 45px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 14px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         width: 80%;
@@ -4247,6 +4491,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 15px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -4411,6 +4669,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 15px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 80%;
         margin: 15px auto;
@@ -4574,6 +4846,20 @@ footer{
         font-size: 45px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 16px;
+        width: 29%;
+        height: 29%;
+    }
+
+    .card-text-block{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         width: 80%;
@@ -4746,6 +5032,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 4px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 20px;
     }
@@ -4890,6 +5190,20 @@ footer{
         font-size: 30px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 20px;
@@ -5036,6 +5350,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 5px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 20px;
     }
@@ -5150,6 +5478,20 @@ footer{
         font-size: 50px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
 
     .mobile-nav{
         width: 50%;
@@ -5336,6 +5678,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 50%;
         font-size: 20px;
@@ -5456,6 +5812,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         width: 50%;
         font-size: 20px;
@@ -5573,6 +5943,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 6px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 30px;
     }
@@ -5647,6 +6031,20 @@ footer{
         font-size: 50px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 30px;
@@ -5756,6 +6154,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 7px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 30px;
     }
@@ -5863,6 +6275,20 @@ footer{
         font-size: 50px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 30px;
@@ -5979,6 +6405,20 @@ footer{
         font-size: 55px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 8px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 35px;
@@ -6106,6 +6546,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 9px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -6231,6 +6685,20 @@ footer{
         font-size: 55px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 10px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 35px;
@@ -6358,6 +6826,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 11px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -6483,6 +6965,20 @@ footer{
         font-size: 55px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 12px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 35px;
@@ -6610,6 +7106,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 13px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -6736,6 +7246,20 @@ footer{
     }
     /* END CARD-BLOCK */
 
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 14px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    /* END CARD TEXT */
+
     .bottom-menu{
         font-size: 35px;
         margin: 15px auto;
@@ -6861,6 +7385,20 @@ footer{
         font-size: 55px;
     }
     /* END CARD-BLOCK */
+
+    /* CARD TEXT */
+    .card-text{
+        padding: 25px;
+        margin: 15px;
+        width: 30%;
+        height: 30%;
+    }
+
+    .card-text-block{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* END CARD TEXT */
 
     .bottom-menu{
         font-size: 35px;
