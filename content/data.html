@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="../css/main.css">
     <link href="../icons/css/all.css" rel="stylesheet">
+    <script src="../js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" type="text/css" href="../js/datatables.min.css"/>
+    <link rel="stylesheet" href="../css/jquery-dataTables.min.css">
+    <link rel="stylesheet" href="../css/select-dataTables.min.css">
     <title>Semalam</title>
 </head>
 <body>
@@ -31,6 +34,7 @@
                     <table id="dataTable" class="data-table">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>No</th>
                                 <th>Quesioner</th>
                                 <th>Action</th>
@@ -38,6 +42,7 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td></td>
                                 <td>1</td>
                                 <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
                                 <td>
@@ -47,26 +52,9 @@
                             </tr>
 
                             <tr>
+                                <td></td>
                                 <td>2</td>
                                 <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
-                                <td>
-                                    <button class="tombol tmb-utama bunder"><i class="fas fa-pencil-alt"></i></button>
-                                    <button class="tombol tmb-batal bunder"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>3</td>
-                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
-                                <td>
-                                    <button class="tombol tmb-utama bunder"><i class="fas fa-pencil-alt"></i></button>
-                                    <button class="tombol tmb-batal bunder"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>4</td>
-                                <td>Dampak PPKM Terhadap Tingkat Stress Hewan Qurban</td>
                                 <td>
                                     <button class="tombol tmb-utama bunder"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="tombol tmb-batal bunder"><i class="fas fa-trash-alt"></i></button>
@@ -160,9 +148,20 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
     <script type="text/javascript" src="../js/datatables.min.js"></script>
+    
     <script>
         $(document).ready( function () {
             $('#dataTable').DataTable({
+                columnDefs: [ {
+                    orderable: false,
+                    className: 'select-checkbox',
+                    targets:   0
+                } ],
+                select: {
+                    style:    'os',
+                    selector: 'td:first-child'
+                },
+                
                 "scrollX": true
             });
         } );
