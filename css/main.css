@@ -24,6 +24,27 @@ a{
     text-decoration: none;
 }
 
+/* Data Tables Custom */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: rgb(255, 255, 255) !important;
+}
+/* END Data Tables Custom */
+
+/* Input untuk dark theme */
+input{
+    background-color: transparent;
+    color: var(--darktext);
+}
+
+textarea{
+    background-color: transparent;
+    color: var(--darktext);
+}
+
 .bg{
     font-size: 10px;
     margin-top: 5px;
@@ -838,7 +859,7 @@ abbr{
 
 .edit-group .label{
     position: absolute;
-    color: #424874;
+    color: var(--darkaksen);
     top: 10px;
     left: 20px;
 }
@@ -870,18 +891,19 @@ abbr{
     border-radius: 50px;
     background-color: transparent;
     cursor: pointer;
+    color: var(--darktext);
 }
 
 .edit-group button:hover{
-    background-color: rgba(252, 229, 225, 0.5);
+    background-color: rgba(54, 54, 54, 0.5);
 }
 
 .edit-group button.add-lain{
-    color: #4E709D;
+    color: var(--darkaksen);
     font-weight: bold;
 }
 .edit-group button.add-lain:hover{
-    background-color: rgba(225, 237, 252, 0.5);
+    background-color: rgba(54, 54, 54, 0.5);
 }
 
 .edit-group input[type=text]{
@@ -992,7 +1014,7 @@ input.wajib:checked + label.wajib{
 button.buttonReset{
     outline: none;
     border: none;
-    background-color: #fff;
+    background-color: var(--bgdark);
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
@@ -1002,7 +1024,7 @@ button.buttonReset{
 }
 
 button.buttonReset:hover{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(82, 30, 30);
     border-radius: 3px;
 }
 
@@ -1014,7 +1036,7 @@ button.buttonReset:hover{
 }
 
 .pilihan-gandav2 tr{
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid var(--dark);
 }
 
 .pilihan-gandav2 th{
@@ -1023,7 +1045,7 @@ button.buttonReset:hover{
 }
 
 .pilihan-gandav2 tr td{
-    background-color: rgb(243, 243, 243);
+    background-color: var(--bgdark);
     padding: 15px;
 }
 
@@ -1077,7 +1099,7 @@ footer{
 }
 
 .bottom-menu a{
-    color: #424874;
+    color: var(--darktext);
 }
 
 .menu{
@@ -1111,11 +1133,11 @@ footer{
 }
 
 .form a{
-    color: #424874;
+    color: var(--darkaksen);
 }
 
 .grup-input{
-    background-color: brown;
+    background-color: transparent;
     margin: 30px 0px;
     position: relative;
 }
@@ -1138,7 +1160,7 @@ footer{
 }
 
 .grup-input:focus-within{
-    color: #424874;;
+    color: var(--darkaksen);
 }
 
 .shortcut{
@@ -1159,6 +1181,10 @@ footer{
 
 .data-table tbody tr:nth-child(even){
     background-color: var(--bgdark);
+}
+
+.data-table tbody tr:nth-child(odd){
+    background-color: var(--dark);
 }
 
 .data-table tbody tr:hover{
@@ -1261,6 +1287,7 @@ footer{
     height: 100%;
     overflow: auto;
     display: none;
+    color: var(--darktext);
 }
 
 .modal-content{
@@ -1286,13 +1313,13 @@ footer{
     width: 100%;
     padding: 15px;
     cursor: pointer;
-    color: rgb(29, 29, 29);
+    color: var(--darktext);
     font-weight: bold;
     transition: 0.5s ease;
 }
 
 .list-menu-container a{
-    color: rgb(29, 29, 29);
+    color: var(--darktext);
 }
 
 .label-list{
@@ -1314,20 +1341,20 @@ footer{
 
 .list-menu-container:hover,
 .list-menu-container:focus{
-    color: indigo;
+    color: var(--darkaksen);
     margin-left: 10px;
 }
 
 .list-menu-container a:hover,
 .list-menu-container a:focus{
-    color: indigo;
+    color: var(--darkaksen);
 }
 
 .profile{
     width: 100%;
     padding: 15px;
     cursor: pointer;
-    color: rgb(29, 29, 29);
+    color: var(--darktext);
     font-weight: bold;
     transition: 0.5s ease;
 }
@@ -1336,7 +1363,7 @@ footer{
 .profile.focus{
     margin-top: -10px;
     margin-bottom: 10px;
-    color: indigo;
+    color: var(--darkaksen);
 }
 
 .dpAkun{
