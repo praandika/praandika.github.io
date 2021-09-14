@@ -29,11 +29,11 @@ $(document).ready(function(){
 
 // Hide Footer saat keyboard muncul (input focus)
 $(document).ready(function(){
-    $(".container").on("focus","input",function(){
+    $(".container").on("focus","input:text","textarea",function(){
         $("footer").attr("hidden", "hidden");
     });
 
-    $(".container").on("blur","input",function(){
+    $(".container").on("blur","input:text","textarea",function(){
         $("footer").removeAttr("hidden");
     });
 });
@@ -52,3 +52,18 @@ function tampilMenu(){
     return show;
     
 }
+
+// Tambahkan Lainnya
+$(document).ready(function(){
+    $("body").on("click",".lainnyaRadio",function(){ 
+        $(this).parents(".control-edit").before(`
+            <p class="inputLainRadio">
+                <input type="radio" name="cek" id="ck_other">
+                <label for="ck_other">
+                    Yang Lain :
+                </label>
+                <input type="text" id="input_other">
+            </p>
+        `);
+    });
+});
