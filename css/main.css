@@ -1075,8 +1075,8 @@ textarea:focus{
 
 /* Bottom Menu */
 footer{
-    /* Position sticky not fixed */
-    position: sticky;
+    /* Position fixed */
+    position: fixed;
     bottom: 0;
     width: 100%;
     overflow: hidden;
