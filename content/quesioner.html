@@ -62,10 +62,8 @@
                             <label for="pilih3">Opsi 3</label>
                         </p>
 
-                        <div class="setup"></div>
-
-                        <div class="control-edit">
-                            <span class="wajib"><input type="checkbox" name="lainnya" class="lainnyaRadio"><label class="wajiblabel">Tambahkan Lainnya</label></span>
+                        <div class="control-edit addInput">
+                            <button type="button" id="add-lain" class="add-lain addLain-radio">Tambahkan "Lainnya"</button>
                         </div>
 
                         <button type="reset" id="batalRadio" class="buttonReset">Batalkan Pilihan</button>
@@ -126,13 +124,11 @@
                         </label>
                     </p>
 
-                    <p>
-                        <input type="checkbox" name="cek" id="ck_other">
-                        <label for="ck_other">
-                            Yang Lain :
-                        </label>
-                        <input type="text" id="input_other">
-                    </p>
+                    <div class="control-edit addInput">
+                        <button type="button" id="add-lain" class="add-lain addLain-checkbox">Tambahkan "Lainnya"</button>
+                    </div>
+
+                    <button type="reset" id="batalRadio-2" class="buttonReset">Batalkan Pilihan</button>
                 </div>
             </div>
 
@@ -157,6 +153,8 @@
                             <td class="text-center"><input type="checkbox" name="ck-pilih-2"></td>
                         </tr>
                     </table>
+
+                    <button type="reset" id="batalRadio-2" class="buttonReset">Batalkan Pilihan</button>
                 </div>
             </div>
 
@@ -259,6 +257,8 @@
         </div>
     </div>
 
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/quesioner-view.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

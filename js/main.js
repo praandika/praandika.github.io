@@ -38,8 +38,6 @@ $(document).ready(function(){
     });
 });
 
-
-
 // Tampilkan menu User
 function tampilMenu(){
     let show = document.getElementById("menuakun");
@@ -52,18 +50,3 @@ function tampilMenu(){
     return show;
     
 }
-
-// Tambahkan Lainnya
-$(document).ready(function(){
-    $("body").on("click",".lainnyaRadio",function(){ 
-        $(this).parents(".control-edit").before(`
-            <p class="inputLainRadio">
-                <input type="radio" name="cek" id="ck_other">
-                <label for="ck_other">
-                    Yang Lain :
-                </label>
-                <input type="text" id="input_other">
-            </p>
-        `);
-    });
-});
