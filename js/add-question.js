@@ -584,7 +584,7 @@ $(document).ready(function(){
 // Copy Pertanyaan
 $(document).ready(function(){
     $("body").on("click",".copy",function(){
-      $(this).parents(".addjawabSingkat").clone().appendTo(".setup").hide().fadeIn();
+        $(this).parents(".addjawabSingkat").clone().appendTo(".setup").hide().fadeIn();
     });
 
     $("body").on("click",".copy",function(){
