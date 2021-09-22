@@ -254,6 +254,53 @@ input[type=checkbox]{
 
 /*--------- End Custom Umum ------------------*/
 
+/* Landing Page */
+.container-normal{
+    width: 80%;
+    margin: auto;
+}
+
+.logo{
+    float: left;
+    width: 30%;
+    background-color: #94d1a9;
+}
+
+.menu-lp{
+    background-color: #ca8b8b;
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.menu-lp ul{
+    list-style-type: none;
+}
+
+.menu-lp ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-lp ul li a{
+    text-decoration: none;
+    color: var(--darktext);
+}
+
+.menu-lp ul li:hover{
+    background-color: var(--bgdarkaksen);
+}
+
+.drop{
+    position: relative;
+}
+
+.drop-content{
+    position: absolute;
+    
+}
+/* End Landing Page */
+
 /* Top Navigasi */
 nav{
     position: sticky;
