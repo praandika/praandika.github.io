@@ -24,27 +24,25 @@
                     <p>Deskripsi</p>
                 </div>
             </div>
-
-            <!-- Component Jawaban Singkat -->
-            <div class="content fadeInKanan">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <p class="judul">Pertanyaan Singkat</p>
-                    <input type="text" placeholder="Jawaban Anda" class="jawab-singkat" />
-                </div>
-            </div>
-
-            <!-- Component Jawaban Panjang -->
-            <div class="content fadeInKiri">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <p class="judul">Pertanyaan Panjang</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-
             <!-- FORM All In One -->
             <form>
+                <!-- Component Jawaban Singkat -->
+                <div class="content fadeInKanan">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <p class="judul">Pertanyaan Singkat</p>
+                        <input type="text" placeholder="Jawaban Anda" class="jawab-singkat" />
+                    </div>
+                </div>
+
+                <!-- Component Jawaban Panjang -->
+                <div class="content fadeInKiri">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <p class="judul">Pertanyaan Panjang</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
                 <!-- Component Pilihan Ganda 1-->
                 <div class="content fadeInKanan">
                     <div class="line"></div>
@@ -52,15 +50,15 @@
                         <p class="judul">Pertanyaan Pilihan Ganda</p>
 
                         <p>
-                            <input type="radio" name="pilih" id="pilih1" />
+                            <input type="radio" name="pilih" id="pilih1" class="remember" />
                             <label for="pilih1">Opsi 1</label>
                         </p>
                         <p>
-                            <input type="radio" name="pilih" id="pilih2" />
+                            <input type="radio" name="pilih" id="pilih2" class="remember" />
                             <label for="pilih2">Opsi 2</label>
                         </p>
                         <p>
-                            <input type="radio" name="pilih" id="pilih3" />
+                            <input type="radio" name="pilih" id="pilih3" class="remember" />
                             <label for="pilih3">Opsi 3</label>
                         </p>
 
@@ -70,7 +68,7 @@
                             </button>
                         </div>
 
-                        <button type="button" id="batalRadio" class="buttonReset">
+                        <button type="button" class="buttonReset">
                             Batalkan Pilihan
                         </button>
                     </div>
@@ -106,7 +104,7 @@
                             </tr>
                         </table>
 
-                        <button type="button" id="batalRadio-2" class="buttonReset">
+                        <button type="button" class="buttonReset">
                             Batalkan Pilihan
                         </button>
                     </div>
@@ -137,77 +135,74 @@
                             </button>
                         </div>
 
-                        <button type="button" id="batalRadio-2" class="buttonReset">
+                        <button type="button" class="buttonReset">
                             Batalkan Pilihan
                         </button>
                     </div>
                 </div>
-            </form>
-            <!-- END FORM All In One -->
 
-            <!-- Component Kotak Centang v2-->
-            <div class="content fadeInKiri">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <table class="pilihan-gandav2">
-                        <tr class="text-center">
-                            <th></th>
-                            <th>Kolom 1</th>
-                            <th>Kolom 2</th>
-                        </tr>
-                        <tr>
-                            <td>Baris 1</td>
-                            <td class="text-center">
-                                <input type="checkbox" name="ck-pilih-1" />
-                            </td>
-                            <td class="text-center">
-                                <input type="checkbox" name="ck-pilih-1" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Baris 2</td>
-                            <td class="text-center">
-                                <input type="checkbox" name="ck-pilih-2" />
-                            </td>
-                            <td class="text-center">
-                                <input type="checkbox" name="ck-pilih-2" />
-                            </td>
-                        </tr>
-                    </table>
+                <!-- Component Kotak Centang v2-->
+                <div class="content fadeInKiri">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <table class="pilihan-gandav2">
+                            <tr class="text-center">
+                                <th></th>
+                                <th>Kolom 1</th>
+                                <th>Kolom 2</th>
+                            </tr>
+                            <tr>
+                                <td>Baris 1</td>
+                                <td class="text-center">
+                                    <input type="checkbox" name="ck-pilih-1" />
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox" name="ck-pilih-1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Baris 2</td>
+                                <td class="text-center">
+                                    <input type="checkbox" name="ck-pilih-2" />
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox" name="ck-pilih-2" />
+                                </td>
+                            </tr>
+                        </table>
 
-                    <button type="reset" id="batalRadio-2" class="buttonReset">
-                        Batalkan Pilihan
-                    </button>
-                </div>
-            </div>
-
-            <!-- Componen Tanggal-->
-            <div class="content fadeInKanan">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <div class="form_group">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="date" id="tanggal" />
+                        <button type="button" class="buttonReset">
+                            Batalkan Pilihan
+                        </button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Componen Waktu-->
-            <div class="content fadeInKiri">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <div class="form_group">
-                        <label for="waktu">Waktu</label>
-                        <input type="time" id="waktu" />
+                <!-- Componen Tanggal-->
+                <div class="content fadeInKanan">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <div class="form_group">
+                            <label for="tanggal">Tanggal</label>
+                            <input type="date" id="tanggal" />
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Component Skala Linier-->
-            <div class="content fadeInKanan">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <form>
+                <!-- Componen Waktu-->
+                <div class="content fadeInKiri">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <div class="form_group">
+                            <label for="waktu">Waktu</label>
+                            <input type="time" id="waktu" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component Skala Linier-->
+                <div class="content fadeInKanan">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
                         <table class="pilihan-gandav2">
                             <tr class="text-center">
                                 <th>1</th>
@@ -218,35 +213,33 @@
                             </tr>
                             <tr>
                                 <td class="text-center">
-                                    <input type="radio" name="skalalinier" />
+                                    <input type="radio" name="skalalinier1" />
                                 </td>
                                 <td class="text-center">
-                                    <input type="radio" name="skalalinier" />
+                                    <input type="radio" name="skalalinier1" />
                                 </td>
                                 <td class="text-center">
-                                    <input type="radio" name="skalalinier" />
+                                    <input type="radio" name="skalalinier1" />
                                 </td>
                                 <td class="text-center">
-                                    <input type="radio" name="skalalinier" />
+                                    <input type="radio" name="skalalinier1" />
                                 </td>
                                 <td class="text-center">
-                                    <input type="radio" name="skalalinier" />
+                                    <input type="radio" name="skalalinier1" />
                                 </td>
                             </tr>
                         </table>
 
-                        <button type="reset" id="batalSkala" class="buttonReset">
+                        <button type="button" class="buttonReset">
                             Batalkan Pilihan
                         </button>
-                    </form>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Component Skala Linier with label-->
-            <div class="content fadeInKiri">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <form>
+                <!-- Component Skala Linier with label-->
+                <div class="content fadeInKiri">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
                         <table class="pilihan-gandav2">
                             <tr class="text-center">
                                 <th></th>
@@ -278,28 +271,29 @@
                             </tr>
                         </table>
 
-                        <button type="reset" id="batalSkala" class="buttonReset">
+                        <button type="button" class="buttonReset">
                             Batalkan Pilihan
                         </button>
-                    </form>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Component Drop Down-->
-            <div class="content fadeInKanan">
-                <div class="line"></div>
-                <div class="bungkus-content">
-                    <p class="judul">Pilih Data dibawah ini</p>
-                    <select name="sl" id="sl" class="dropdown">
-                        <option value="Opsi 1">Opsi 1</option>
-                        <option value="Opsi 2">Opsi 2</option>
-                        <option value="Opsi 3">Opsi 3</option>
-                        <option value="Opsi 4">Opsi 4</option>
-                    </select>
+                <!-- Component Drop Down-->
+                <div class="content fadeInKanan">
+                    <div class="line"></div>
+                    <div class="bungkus-content">
+                        <p class="judul">Pilih Data dibawah ini</p>
+                        <select name="sl" id="sl" class="dropdown">
+                            <option value="Opsi 1">Opsi 1</option>
+                            <option value="Opsi 2">Opsi 2</option>
+                            <option value="Opsi 3">Opsi 3</option>
+                            <option value="Opsi 4">Opsi 4</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <button class="tombol tmb-utama bunder fadeInBawah">Kirim</button>
+                <button class="tombol tmb-utama bunder fadeInBawah">Kirim</button>
+            </form>
+            <!-- END FORM All In One -->
         </div>
     </div>
 
