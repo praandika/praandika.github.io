@@ -45,6 +45,12 @@ a{
 }
 /* END Data Tables Custom */
 
+/* Responsive slide kanan kiri */
+.x-auto{
+    overflow-x: auto;
+}
+/* END Responsive slide kanan kiri */
+
 /* Input untuk dark theme */
 input{
     background-color: transparent;
@@ -261,20 +267,22 @@ input[type=checkbox]{
 }
 
 .logo{
+    text-align: left;
     float: left;
-    width: 30%;
-    background-color: #94d1a9;
+}
+
+.menu-lp img{
+    width: 200px;
 }
 
 .menu-lp{
     background-color: #ca8b8b;
-    float: right;
-    width: 70%;
     text-align: right;
 }
 
 .menu-lp ul{
     list-style-type: none;
+    overflow: hidden;
 }
 
 .menu-lp ul li{
@@ -292,12 +300,23 @@ input[type=checkbox]{
 }
 
 .drop{
-    position: relative;
+    display: inline-block;
 }
 
 .drop-content{
     position: absolute;
-    
+    display: none;
+    padding: 10px 0px;
+    background-color:rgb(232, 245, 255);
+    z-index: 1;
+}
+
+ul.drop-content li a{
+    color: var(--bgdark);
+}
+
+.drop:hover .drop-content{
+    display: block;
 }
 /* End Landing Page */
 
