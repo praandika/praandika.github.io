@@ -1288,6 +1288,10 @@ footer{
     padding: 20px;
 }
 
+table td{
+    word-break: break-all;
+}
+
 .data-table button.tombol{
     font-size: 12px;
     padding: 10px;
@@ -1478,7 +1482,7 @@ footer{
 .profile.focus{
     margin-top: -10px;
     margin-bottom: 10px;
-    color: var(--darkaksen);
+    color: var(--dark);
 }
 
 .dpAkun{
