@@ -28,7 +28,7 @@
         <div class="row-content">
             <div class="data-content fadeInAtas">
                 <!-- responsive table -->
-                <div class="responsive-table">
+
                     <table id="dataTable" class="data-table">
                         <thead>
                             <tr>
@@ -70,7 +70,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+    
             </div>
         </div>
     </div>
@@ -163,8 +163,18 @@
                 columnDefs: [ {
                     orderable: false,
                     className: 'select-checkbox',
-                    targets:   0
-                } ],
+                    targets:   0,
+                    autoWidth: false,
+                    columns : [
+                        { width : '50px' },
+                        { width : '50px' },
+                        { width : '50px' },
+                        { width : '50px' },        
+                        { width : '50px' },
+                        { width : '50px' }        
+                    ],
+                },
+            ],
                 select: {
                     style:    'os',
                     selector: 'td:first-child'

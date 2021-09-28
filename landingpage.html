@@ -4,42 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="icons/72.png"/>
+
     <link rel="stylesheet" href="css/main.css">
-    <title>Landing Page</title>
+    <link href="icons/css/all.css" rel="stylesheet">
+    <title>Semalam</title>
 </head>
 <body>
+    <nav>
+        <div class="mobile-nav">
+            <div class="logo">
+                <a href="#">WIS PROJECT</a>
+            </div>
 
-        <div class="container-normal">
-            <div class="menu-lp">
-                
-                <ul>
-                    <li style="float: left;">
-                        <a href="#"><img src="img/logo-putih.png" alt="" srcset=""></a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Menu 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 2</a>
-                    </li>
-                    <li class="drop">
-                        <a href="#">Dropdown</a>
-                        <ul class="drop-content">
-                            <li><a href="#">Dropdown</a></li>
-                            <li><a href="#">Dropdown</a></li>
-                            <li><a href="#">Dropdown</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Menu 3</a>
-                    </li>
-                    
-                </ul>
+            <div class="user" id="user">
+                <a href="javascript:;" class="userbtn"><i class="far fa-user-circle"></i></a>
             </div>
         </div>
-
-    <div class="container-normal" style="border: 1px solid black;">
-        
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <div class="hero-title">
+                <h2>Wis Project</h2>
+                <p>Get better quesioner</p>
+                <button>Click Me</button>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- Modal Menu -->
+<div class="modal" id="modalMenuAkun">
+    <div class="modal-content">
+        <div class="modal-kepala">
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-badan">
+            <div class="profile" id="username">
+                <div class="dpAkun">
+                    <i class="far fa-smile"></i>
+                    <p>Andika</p>
+                </div>
+            </div>
+
+            <a href="register.html">
+                <div class="list-menu-container" id="register">
+                    <i class="fas fa-user"></i>
+                    <span class="label-list">
+                        Register
+                    </span>
+                </div>
+            </a>
+
+            <a href="login.html">
+                <div class="list-menu-container" id="login">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span class="label-list">
+                        Login
+                    </span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="list-menu-container" id="login">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="label-list">
+                        Logout
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- END Modal -->
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/change-bg.js"></script>
+
 </body>
 </html>

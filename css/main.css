@@ -261,62 +261,22 @@ input[type=checkbox]{
 /*--------- End Custom Umum ------------------*/
 
 /* Landing Page */
-.container-normal{
-    width: 80%;
-    margin: auto;
+.hero{
+    background-image: url("img/space.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.logo{
-    text-align: left;
-    float: left;
-}
-
-.menu-lp img{
-    width: 200px;
-}
-
-.menu-lp{
-    background-color: #ca8b8b;
-    text-align: right;
-}
-
-.menu-lp ul{
-    list-style-type: none;
-    overflow: hidden;
-}
-
-.menu-lp ul li{
-    display: inline-block;
-    padding: 10px;
-}
-
-.menu-lp ul li a{
-    text-decoration: none;
-    color: var(--darktext);
-}
-
-.menu-lp ul li:hover{
-    background-color: var(--bgdarkaksen);
-}
-
-.drop{
-    display: inline-block;
-}
-
-.drop-content{
+.hero-title{
+    text-align: center;
     position: absolute;
-    display: none;
-    padding: 10px 0px;
-    background-color:rgb(232, 245, 255);
-    z-index: 1;
-}
-
-ul.drop-content li a{
-    color: var(--bgdark);
-}
-
-.drop:hover .drop-content{
-    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--darktext);
 }
 /* End Landing Page */
 
@@ -1283,13 +1243,14 @@ footer{
 }
 
 /* Table */
+table.dataTable tbody td {
+    word-break: break-word;
+    vertical-align: top;
+}
+
 .data-content{
     background-color: var(--softdark);
     padding: 20px;
-}
-
-table td{
-    word-break: break-all;
 }
 
 .data-table button.tombol{
