@@ -86,6 +86,11 @@ body{
     color: var(--darktext);
 }
 
+body.con-landing-page{
+    height: 100%;
+    overflow: hidden;
+}
+
 .responsive-table{
     overflow: hidden;
     overflow-x: auto;
@@ -172,6 +177,45 @@ input[type=checkbox]{
     font-size: 15px;
     transition: 0.2s ease;
 }
+
+/* Tombol Outline for Banner */
+.tombol-outline{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.tombol-outline:hover{
+    cursor: pointer;
+}
+
+.tmb-dark-o{
+    border: 3px solid var(--dark);
+    color: var(--dark);
+}
+
+.tmb-dark-o:hover,
+a.tmb-dark-o:hover{
+    background-color: var(--dark);
+    color: var(--darktext) !important;
+}
+
+.tmb-light-o{
+    border: 3px solid var(--bglight);
+    color: var(--light);
+}
+
+.tmb-light-o:hover,
+a.tmb-light-o:hover{
+    background-color: var(--bglight);
+    color: var(--bgdarkaksen) !important;
+}
+
+.tmb-banner{
+    padding: 10px 50px;
+}
+/* END Tombol Outline for Banner */
 
 .tombol-md{
     padding: 10px 35px;
@@ -261,9 +305,18 @@ input[type=checkbox]{
 /*--------- End Custom Umum ------------------*/
 
 /* Landing Page */
+.con-landing-page-2{
+    width: 40%;
+    margin: 0 auto;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
 .hero{
-    background-image: url("img/space.jpg");
-    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar4.jpg");
+    height: 95vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,31 +329,62 @@ input[type=checkbox]{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--darktext);
+    max-width: 450px;
 }
 
-.icon{
-    display: none;
-}
-/* END top navigasi */
-
-.hero{
-    z-index: -99;
-    margin-top: 0px;
-    height: 500px;
+.hero-title p{
+    margin-bottom: 20px;
 }
 
-.hero img{
-    height: 500px;
+.hero-light,
+.hero-light a{
+    color: var(--darktext) !important;
 }
 
-.container-normal{
-    width: 80%;
-    margin: auto;
+.hero-dark,
+.hero-dark a{
+    color: var(--softdark) !important;
 }
-
-
 /* End Landing Page */
+
+/* Landing Page 2 */
+.bg-gambar{
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gambar1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar1.jpg")
+}
+
+.gambar2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar3.jpg")
+}
+
+.gambar3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar4.jpg")
+}
+
+.gambar4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar5.jpg")
+}
+
+.gambar5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar6.jpg")
+}
+
+.gambar6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/gambar7.jpg")
+}
+
+.bg-gambar-text{
+    position: fixed;
+    z-index: 2;
+}
+/* END Landing Page 2 */
 
 /* Top Navigasi */
 nav{
@@ -821,14 +905,14 @@ abbr{
 }
 
 .page-nav-kiri{
-   float: left;
-   width: 70%;
+    float: left;
+    width: 70%;
 }
 
 .page-nav-kanan{
-   float: right;
-   width: 30%;
-   text-align: right;
+    float: right;
+    width: 30%;
+    text-align: right;
 }
 
 .btnpilihpertanyaan{
@@ -1629,6 +1713,26 @@ table.dataTable tbody td {
 
 /* Ukuran Smartphone XS */
 @media screen and (max-width: 280px) {
+    
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+/* END Tombol Outline for Banner */
+
+
+/* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -1836,6 +1940,25 @@ table.dataTable tbody td {
 
 /* Ukuran Smartphone S */
 @media screen and (max-width: 313px) and (min-width: 281px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+/* END Tombol Outline for Banner */
+
+
+/* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -2040,6 +2163,26 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 320px) and (min-width: 314px) {
+
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -2245,6 +2388,30 @@ table.dataTable tbody td {
 
 /* Ukuran Smartphone M */
 @media screen and (max-width: 347px) and (min-width: 321px) {
+
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+/* END Tombol Outline for Banner */
+
+
+/* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 9px;
     }
@@ -2450,6 +2617,29 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 375px) and (min-width: 348px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 9px;
     }
@@ -2656,6 +2846,29 @@ table.dataTable tbody td {
 
 /* Ukuran Smartphone L */
 @media screen and (max-width: 419px) and (min-width: 376px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -2860,6 +3073,29 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 440px) and (min-width: 420px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -3064,6 +3300,29 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 479px) and (min-width: 441px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 400px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -3268,6 +3527,29 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 480px) and (min-width: 480px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 15px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 400px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -3474,6 +3756,28 @@ table.dataTable tbody td {
 
 /* Ukuran Tab */
 @media screen and (max-width: 499px) and (min-width: 481px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 400px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -3651,6 +3955,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 559px) and (min-width: 500px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 400px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -3828,6 +4154,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 619px) and (min-width: 560px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 450px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4005,6 +4353,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 679px) and (min-width: 620px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 450px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4182,6 +4552,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 707px) and (min-width: 680px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 450px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4359,6 +4751,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 753px) and (min-width: 708px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 500px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4536,6 +4950,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 789px) and (min-width: 754px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 500px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4713,6 +5149,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 799px) and (min-width: 790px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 600px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -4890,6 +5348,28 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 800px) and (min-width: 800px) {
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 600px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -5068,6 +5548,27 @@ table.dataTable tbody td {
 
 /* Ukuran Tab 2 */
 @media screen and (max-width: 899px) and (min-width: 801px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -5226,6 +5727,27 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 950px) and (min-width: 900px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -5384,6 +5906,27 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 970px) and (min-width: 951px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 20px;
+    }
+
+    .tmb-banner{
+        padding: 10px 20px;
+    }
+
+    .hero-title{
+        width: 300px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        font-size: 15px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 8px;
     }
@@ -5543,6 +6086,13 @@ table.dataTable tbody td {
 
 /* Laptop M Ukuran 1024 */
 @media screen and (max-width: 999px) and (min-width: 971px) {
+/* Landing Page */
+    .con-landing-page-2{
+        width: 50%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -5669,6 +6219,13 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 1000px){
+/* Landing Page */
+    .con-landing-page-2{
+        width: 50%;
+        margin: 0 auto;
+    }
+/* END Landing Page 2 */
+
     .error-container{
         width: 50%;
         margin: 0 auto;
@@ -5730,6 +6287,13 @@ table.dataTable tbody td {
 
 /* Laptop L Ukuran 1220 */
 @media screen and (max-width: 1119px) and (min-width: 1025px){
+/* Landing Page */
+    .con-landing-page-2{
+        width: 50%;
+        font-size: 20px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -5863,6 +6427,13 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 1220px) and (min-width: 1120px){
+/* Landing Page */
+    .con-landing-page-2{
+        width: 50%;
+        font-size: 20px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 10px;
     }
@@ -6450,6 +7021,20 @@ table.dataTable tbody td {
 
 /* Ukuran 4K */
 @media screen and (max-width: 1649px) and (min-width: 1531px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -6589,6 +7174,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 1799px) and (min-width: 1650px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -6728,6 +7327,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 1949px) and (min-width: 1800px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -6867,6 +7480,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 2099px) and (min-width: 1950px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -7006,6 +7633,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 2249px) and (min-width: 2100px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -7145,6 +7786,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 2399px) and (min-width: 2250px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -7284,6 +7939,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 2549px) and (min-width: 2400px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
@@ -7423,6 +8092,20 @@ table.dataTable tbody td {
 }
 
 @media screen and (max-width: 2560px) and (min-width: 2550px){
+/* Tombol Outline for Banner */
+    .tombol-outline{
+        font-size: 30px;
+    }
+    /* END Tombol Outline for Banner */
+
+
+    /* Landing Page */
+    .con-landing-page-2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+/* END Landing Page 2 */
+
     .menu p{
         font-size: 12px;
     }
