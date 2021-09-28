@@ -4,49 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="icons/72.png"/>
+
     <link rel="stylesheet" href="css/main.css">
-    <title>Landing Page</title>
+    <link href="icons/css/all.css" rel="stylesheet">
+    <title>Semalam</title>
 </head>
 <body>
-    <div class="menu-nav" id="menuNav">
-        <div class="logo">
-            <img src="img/logo-putih.png" alt="" width="160">
+    <nav>
+        <div class="mobile-nav">
+            <div class="logo">
+                <a href="#">WIS PROJECT</a>
+            </div>
+
+            <div class="user" id="user">
+                <a href="javascript:;" class="userbtn"><i class="far fa-user-circle"></i></a>
+            </div>
         </div>
-        <div class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu 1</a></li>
-                <!-- Dropdown -->
-                <li class="drop">
-                    <span class="dropbtn">Dropdown &#9662;</span>
-                    <ul class="drop-content">
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                    </ul>
-                </li>
-                <!-- END Dropdown -->
-                <li><a href="#" class="nav-btn">Login</a></li>
-                <!-- Button Menu Responsive Mobile -->
-                <li><a href="javascript:void(0)" class="icon" onclick="hamburger()">&#9776;</a></li>
-            </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <div class="hero-title">
+                <h2>Wis Project</h2>
+                <p>Get better quesioner</p>
+                <button>Click Me</button>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="hero">
-        <img src="img/banner.jpg" alt="">
-        <div class="info">
-            <h3>Judul Apa aja dah</h3>
-            <p>isi dari judulnya apa ni?</p>
-            <button>Tombol</button>
+<!-- Modal Menu -->
+<div class="modal" id="modalMenuAkun">
+    <div class="modal-content">
+        <div class="modal-kepala">
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-badan">
+            <div class="profile" id="username">
+                <div class="dpAkun">
+                    <i class="far fa-smile"></i>
+                    <p>Andika</p>
+                </div>
+            </div>
+
+            <a href="register.html">
+                <div class="list-menu-container" id="register">
+                    <i class="fas fa-user"></i>
+                    <span class="label-list">
+                        Register
+                    </span>
+                </div>
+            </a>
+
+            <a href="login.html">
+                <div class="list-menu-container" id="login">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span class="label-list">
+                        Login
+                    </span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="list-menu-container" id="login">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="label-list">
+                        Logout
+                    </span>
+                </div>
+            </a>
         </div>
     </div>
+</div>
+<!-- END Modal -->
 
-    <div class="container-normal" style="border: 1px solid black;">
-        
-    </div>
-
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/change-bg.js"></script>
 </body>
 </html>

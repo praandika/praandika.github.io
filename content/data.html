@@ -28,7 +28,7 @@
         <div class="row-content">
             <div class="data-content fadeInAtas">
                 <!-- responsive table -->
-                <div class="responsive-table">
+
                     <table id="dataTable" class="data-table">
                         <thead>
                             <tr>
@@ -42,7 +42,7 @@
                             <tr>
                                 <td><input type="checkbox" name="" id=""></td>
                                 <td>1</td>
-                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat</td>
+                                <td>Dampak PPKM Terhadap Tingkat Stress Masyarakat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolores odit, quasi consequuntur omnis veniam voluptatum ipsam aliquid repudiandae error sint fugiat expedita quis ipsum explicabo, quo cumque modi neque.</td>
                                 <td>
                                     <button class="tombol tmb-utama bunder"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="tombol tmb-batal bunder"><i class="fas fa-trash-alt"></i></button>
@@ -70,7 +70,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+    
             </div>
         </div>
     </div>
@@ -163,8 +163,18 @@
                 columnDefs: [ {
                     orderable: false,
                     className: 'select-checkbox',
-                    targets:   0
-                } ],
+                    targets:   0,
+                    autoWidth: false,
+                    columns : [
+                        { width : '50px' },
+                        { width : '50px' },
+                        { width : '50px' },
+                        { width : '50px' },        
+                        { width : '50px' },
+                        { width : '50px' }        
+                    ],
+                },
+            ],
                 select: {
                     style:    'os',
                     selector: 'td:first-child'
