@@ -1061,6 +1061,24 @@ abbr{
     background-color: rgba(54, 54, 54, 0.5);
 }
 
+.edit-group a.btn-del{
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--darktext);
+}
+
+.edit-group a.btn-del:hover{
+    background-color: rgba(54, 54, 54, 0.5);
+}
+
 .edit-group button.add-lain{
     color: var(--darkaksen);
     font-weight: bold;

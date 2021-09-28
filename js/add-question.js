@@ -132,6 +132,7 @@ $(document).ready(function(){
                             <div class="edit-group setInput">
                                 <input type="radio" name="pilih" id="pilih1" disabled>
                                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
+                                <a class="del btn-del"><i class="fas fa-times"></i></a>
                             </div>
                             
                             <div class="edit-group addInput">
@@ -175,7 +176,7 @@ $(document).ready(function(){
                                 <div class="edit-group setInput">
                                     <input type="radio" name="pilih" id="pilih1" disabled>
                                     <input type="text" name="opsix" id="opsi" class="text" placeholder="Text ...">
-                                    <button class="del"><i class="fas fa-times"></i></button>
+                                    <a class="del btn-del"><i class="fas fa-times"></i></a>
                                 </div>
 
                                 <div class="edit-group addInput">
@@ -188,7 +189,7 @@ $(document).ready(function(){
                                 <div class="edit-group setInput">
                                     <input type="radio" name="pilih" id="pilih1" disabled>
                                     <input type="text" name="opsiy" id="opsi" class="text" placeholder="Text ...">
-                                    <button class="del"><i class="fas fa-times"></i></button>
+                                    <a class="del btn-del"><i class="fas fa-times"></i></a>
                                 </div>
 
                                 <div class="edit-group addInput">
@@ -234,7 +235,7 @@ $(document).ready(function(){
                             <div class="edit-group setInput">
                                 <input type="checkbox" name="pilih" id="pilih1" disabled>
                                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
-                                <button class="del"><i class="fas fa-times"></i></button>
+                                <a class="del btn-del"><i class="fas fa-times"></i></a>
                             </div>
 
                             <div class="edit-group addInput">
@@ -278,7 +279,7 @@ $(document).ready(function(){
                                 <div class="edit-group setInput">
                                     <input type="checkbox" name="pilih" id="pilih1" disabled>
                                     <input type="text" name="opsix" id="opsi" class="text" placeholder="Text ...">
-                                    <button class="del"><i class="fas fa-times"></i></button>
+                                    <a class="del btn-del"><i class="fas fa-times"></i></a>
                                 </div>
 
                                 <div class="edit-group addInput">
@@ -291,7 +292,7 @@ $(document).ready(function(){
                                 <div class="edit-group setInput">
                                     <input type="checkbox" name="pilih" id="pilih1" disabled>
                                     <input type="text" name="opsiy" id="opsi" class="text" placeholder="Text ...">
-                                    <button class="del"><i class="fas fa-times"></i></button>
+                                    <a class="del btn-del"><i class="fas fa-times"></i></a>
                                 </div>
 
                                 <div class="edit-group addInput">
@@ -335,7 +336,7 @@ $(document).ready(function(){
                             <div class="edit-group setInput">
                                 <span id="nomor" class="nomor">&#9672;</span>
                                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
-                                <button class="del"><i class="fas fa-times"></i></button>
+                                <a class="del btn-del"><i class="fas fa-times"></i></a>
                             </div>
 
                             <div class="edit-group addInput">
@@ -624,7 +625,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="radio" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -635,7 +636,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="radio" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsix" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -646,7 +647,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="radio" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsiy" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -657,7 +658,7 @@ $(document).ready(function(){
                 <input type="radio" name="pilih" id="pilih1" disabled>
                 <div class="label">Lainnya :</div>
                 <input type="text" name="opsi" id="opsi" class="text lainnya">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -668,7 +669,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="checkbox" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -679,7 +680,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="checkbox" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsix" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -690,7 +691,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <input type="checkbox" name="pilih" id="pilih1" disabled>
                 <input type="text" name="opsiy" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -701,7 +702,7 @@ $(document).ready(function(){
                 <input type="checkbox" name="pilih" id="pilih1" disabled>
                 <div class="label">Lainnya :</div>
                 <input type="text" name="opsi" id="opsi" class="text lainnya">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
@@ -712,7 +713,7 @@ $(document).ready(function(){
             <div class="edit-group setInput">
                 <span id="nomor" class="nomor">&#9672;</span>
                 <input type="text" name="opsi" id="opsi" class="text" placeholder="Text ...">
-                <button class="del"><i class="fas fa-times"></i></button>
+                <a class="del btn-del"><i class="fas fa-times"></i></a>
             </div>
         `);
     });
