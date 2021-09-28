@@ -50,3 +50,12 @@ function tampilMenu(){
     return show;
     
 }
+
+// Responsive Menu Landing Page
+function hamburger(){
+    if ($("#menuNav").hasClass("menu-nav")) {
+        $("#menuNav").addClass("responsive");
+    } else if($("#menuNav").hasClass("responsive")) {
+        $("#menuNav").removeClass("responsive");
+    }
+}

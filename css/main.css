@@ -261,63 +261,74 @@ input[type=checkbox]{
 /*--------- End Custom Umum ------------------*/
 
 /* Landing Page */
-.container-normal{
-    width: 80%;
-    margin: auto;
-}
-
+/* top navigasi */
 .logo{
-    text-align: left;
     float: left;
 }
 
-.menu-lp img{
-    width: 200px;
+.menu-nav{
+    position: sticky;
+    top: 0;
 }
 
-.menu-lp{
-    background-color: #ca8b8b;
-    text-align: right;
+.nav{
+    float: right;
+    padding: 12px 0px;
 }
 
-.menu-lp ul{
-    list-style-type: none;
-    overflow: hidden;
-}
-
-.menu-lp ul li{
+.nav ul li{
     display: inline-block;
-    padding: 10px;
+    padding: 12px 12px;
+    font-weight: bold;
 }
 
-.menu-lp ul li a{
+.nav ul li a{
     text-decoration: none;
-    color: var(--darktext);
-}
-
-.menu-lp ul li:hover{
-    background-color: var(--bgdarkaksen);
+    color: #fff;
 }
 
 .drop{
-    display: inline-block;
+    position: relative;
 }
 
 .drop-content{
     position: absolute;
+    background-color: lightsalmon;
+    min-width: 160px;
     display: none;
-    padding: 10px 0px;
-    background-color:rgb(232, 245, 255);
-    z-index: 1;
+    top: 50px;
 }
 
-ul.drop-content li a{
-    color: var(--bgdark);
+.dropbtn{
+    cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .drop:hover .drop-content{
     display: block;
 }
+
+.icon{
+    display: none;
+}
+/* END top navigasi */
+
+.hero{
+    z-index: -99;
+    margin-top: 0px;
+    height: 500px;
+}
+
+.hero img{
+    height: 500px;
+}
+
+.container-normal{
+    width: 80%;
+    margin: auto;
+}
+
+
 /* End Landing Page */
 
 /* Top Navigasi */

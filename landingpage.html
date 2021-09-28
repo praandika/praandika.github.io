@@ -8,38 +8,45 @@
     <title>Landing Page</title>
 </head>
 <body>
-
-        <div class="container-normal">
-            <div class="menu-lp">
-                
-                <ul>
-                    <li style="float: left;">
-                        <a href="#"><img src="img/logo-putih.png" alt="" srcset=""></a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Menu 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 2</a>
-                    </li>
-                    <li class="drop">
-                        <a href="#">Dropdown</a>
-                        <ul class="drop-content">
-                            <li><a href="#">Dropdown</a></li>
-                            <li><a href="#">Dropdown</a></li>
-                            <li><a href="#">Dropdown</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Menu 3</a>
-                    </li>
-                    
-                </ul>
-            </div>
+    <div class="menu-nav" id="menuNav">
+        <div class="logo">
+            <img src="img/logo-putih.png" alt="" width="160">
         </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <!-- Dropdown -->
+                <li class="drop">
+                    <span class="dropbtn">Dropdown &#9662;</span>
+                    <ul class="drop-content">
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                    </ul>
+                </li>
+                <!-- END Dropdown -->
+                <li><a href="#" class="nav-btn">Login</a></li>
+                <!-- Button Menu Responsive Mobile -->
+                <li><a href="javascript:void(0)" class="icon" onclick="hamburger()">&#9776;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <img src="img/banner.jpg" alt="">
+        <div class="info">
+            <h3>Judul Apa aja dah</h3>
+            <p>isi dari judulnya apa ni?</p>
+            <button>Tombol</button>
+        </div>
+    </div>
 
     <div class="container-normal" style="border: 1px solid black;">
         
     </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
