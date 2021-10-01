@@ -51,6 +51,12 @@ $(document).ready(function(){
       $(".setup").append(`
         <div class="content addjawabSingkat" id="addjawabSingkat">
             <div class="line"></div>
+
+            <div class="nomor-urut">
+                <label>No :</label>
+                <input type="number" name="number" class="input-nomor">
+            </div>
+
             <div class="bungkus-content edit">
                 <p>*Pertanyaan Singkat</p>
                 <input type="text" name="tanya" id="tanya" class="text tanya" placeholder="Masukan pertanyaan untuk jawaban singkat">
@@ -74,6 +80,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addjawabPanjang" id="addjawabPanjang">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Panjang</p>
                     <input type="text" name="tanyapanjang" id="tanyapanjang" class="text" placeholder="Masukan pertanyaan untuk jawaban panjang">
@@ -97,6 +109,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addpilihanGanda">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Ganda</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
@@ -130,6 +148,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addkisipilihanGanda">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Ganda v2</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan ganda">
@@ -179,6 +203,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addkotakCentang">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Kotak Centang</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
@@ -212,6 +242,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addpetakkotakCentang">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Kotak centang v2</p>
                     <input type="text" name="pilihanganda" id="pilihanganda" class="text" placeholder="Masukan pertanyaan pilihan kotak centang">
@@ -261,6 +297,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content adddropDown">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Pilihan Dropdown</p>
                     <input type="text" name="pilihdropdown" id="pilihdropdown" class="text" placeholder="Masukan pertanyaan Daftar Pilihan">
@@ -293,6 +335,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addTanggal">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Tanggal</p>
                     <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
@@ -316,6 +364,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addWaktu">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Waktu</p>
                     <input type="text" name="tanya" id="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
@@ -339,6 +393,12 @@ $(document).ready(function(){
         $(".setup").append(`
             <div class="content addskalaLinier">
                 <div class="line"></div>
+
+                <div class="nomor-urut">
+                    <label>No :</label>
+                    <input type="number" name="number" class="input-nomor">
+                </div>
+                
                 <div class="bungkus-content edit">
                     <p>*Pertanyaan Skala Linier</p>
                     <input type="text" name="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
