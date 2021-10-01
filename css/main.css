@@ -171,15 +171,17 @@ input[type=password]:focus {
     transform: skewX(170deg);
     font-weight: bold;
     padding: 0px 10px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .nomor-urut input{
     position: absolute;
     padding: 0px;
-    width: 35px;
+    width: 40px;
     text-indent: 5px;
     border: 1px solid var(--light);
     transform: skewX(170deg);
+    border-radius: 0px 5px 5px 0px;
 }
 
 .nomor-urut input:hover,
