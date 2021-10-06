@@ -47,5 +47,21 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".buttonReset").click(function(){
         $(this).parents(".bungkus-content").find("input:radio, input:checkbox").prop("checked", false);
+        $(this).parents(".bungkus-content").find("button").attr("disabled","disabled").addClass("disabled");
+    });
+});
+
+// Disable Button Reset
+$(document).ready(function(){
+    let cek = $(".content").find("input:radio, input:checkbox");
+    if (cek.prop("checked") == false) {
+        $("button").attr("disabled","disabled").addClass("disabled");
+    }
+});
+
+// Enable Button Reset
+$(document).ready(function(){
+    $("input:radio, input:checkbox").click(function(){
+        $(this).parents(".bungkus-content").find("button").removeAttr("disabled").removeClass("disabled");
     });
 });

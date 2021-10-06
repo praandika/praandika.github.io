@@ -73,7 +73,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </div>
-                    <button class="tombol-md tmb-utama bunder fadeInBawah">Simpan</button>
+                    <button class="tombol-md tmb-utama bunder fadeInBawah" onclick="cekValue()">Simpan</button>
                 </div>
                 
             `).hide().fadeIn();
@@ -499,7 +499,7 @@ $(document).ready(function(){
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
-                        
+
                         <div class="bungkus-content edit">
                             <p>*Pertanyaan Skala Linier</p>
                             <input type="text" name="tanya" class="text" placeholder="Masukan pertanyaan untuk jawaban singkat">
@@ -806,3 +806,9 @@ $(document).ready(function(){
         $(this).parents(".bungkus-content").find(".skala-b").text(va);
     });
 });
+
+function cekValue(){
+    let value = document.querySelector("input").value;
+    alert("Pesan : " + value);
+    
+}

@@ -159,16 +159,13 @@ input[type=password]:focus {
 
 /* Nomor Urut */
 .nomor-urut{
-    margin-top: 10px;
+    margin-top: 8px;
     padding-left: 20px;
     position: relative;
 }
 
 .nomor-urut label{
-    background-color: var(--bglight);
-    color: var(--dark);
     display: inline-block;
-    transform: skewX(170deg);
     font-weight: bold;
     padding: 0px 10px;
     border-radius: 5px 0px 0px 5px;
@@ -179,9 +176,8 @@ input[type=password]:focus {
     padding: 0px;
     width: 40px;
     text-indent: 5px;
-    border: 1px solid var(--light);
-    transform: skewX(170deg);
     border-radius: 0px 5px 5px 0px;
+    border: 1px solid;
 }
 
 .nomor-urut input:hover,
@@ -190,7 +186,89 @@ input[type=password]:focus {
     border: 1px solid var(--light);
 }
 
+/* Warna */
+.nomor-urut.putih label{
+    background-color: #FFFFFF;
+    color: #1f1d29;
+}
+.nomor-urut.putih input{
+    border-color: #FFFFFF;
+}
+
+.nomor-urut.merah label{
+    background-color: #F35588;
+    color: #1f1d29;
+}
+.nomor-urut.merah input{
+    border: 1px solid #F35588;
+}
+
+.nomor-urut.jingga label{
+    background-color: #FF884B;
+    color: #1f1d29;
+}
+.nomor-urut.jingga input{
+    border: 1px solid #FF884B;
+}
+
+.nomor-urut.kuning label{
+    background-color: #FBFF64;
+    color: #1f1d29;
+}
+.nomor-urut.kuning input{
+    border: 1px solid #FBFF64;
+}
+
+.nomor-urut.hijau label{
+    background-color: #00BD56;
+    color: #1f1d29;
+}
+.nomor-urut.hijau input{
+    border: 1px solid #00BD56;
+}
+
+.nomor-urut.biru label{
+    background-color: #00B7C2;
+    color: #1f1d29;
+}
+.nomor-urut.biru input{
+    border: 1px solid #00B7C2;
+}
+
+.nomor-urut.nila label{
+    background-color: #723881;
+    color: #1f1d29;
+}
+.nomor-urut.nila input{
+    border: 1px solid #723881;
+}
+
+.nomor-urut.ungu label{
+    background-color: #A100FF;
+    color: #1f1d29;
+}
+.nomor-urut.ungu input{
+    border: 1px solid #A100FF;
+}
+
+.nomor-urut.tosca label{
+    background-color: #65c9a3;
+    color: #1f1d29;
+}
+.nomor-urut.tosca input{
+    border: 1px solid #65c9a3;
+}
+
+.nomor-urut.cokelat label{
+    background-color: #966C3B;
+    color: #1f1d29;
+}
+.nomor-urut.cokelat input{
+    border: 1px solid #966C3B;
+}
+
 /* Chrome, Safari, Edge, Opera */
+/* Hapus default type number */
 .nomor-urut input::-webkit-outer-spin-button,
 .nomor-urut input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -1270,6 +1348,11 @@ button.buttonReset{
 button.buttonReset:hover{
     background-color: rgb(82, 30, 30);
     border-radius: 3px;
+}
+
+button.buttonReset.disabled{
+    background-color: var(--bglight);
+    cursor: not-allowed;
 }
 
 /* Pilihan Ganda v2 */
