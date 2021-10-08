@@ -57,9 +57,9 @@ $(document).ready(function(){
                     <div class="content" id="addjawabSingkat">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut merah">
                             <label>No :</label>
-                            <input type="number" name="number" class="input-nomor">
+                            <input type="number" name="number" class="input-nomor" value="123">
                         </div>
                         
                         <div class="bungkus-content edit">
@@ -73,7 +73,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </div>
-                    <button class="tombol-md tmb-utama bunder fadeInBawah" onclick="cekValue()">Simpan</button>
+                    <button class="tombol-md tmb-utama bunder fadeInBawah">Simpan</button>
                 </div>
                 
             `).hide().fadeIn();
@@ -98,7 +98,7 @@ $(document).ready(function(){
                     <div class="content" id="addjawabPanjang">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut jingga">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -138,7 +138,7 @@ $(document).ready(function(){
                     <div class="content" id="addPilihanGanda">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut kuning">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -187,7 +187,7 @@ $(document).ready(function(){
                     <div class="content" id="addkisipilihanGanda">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut hijau">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -253,7 +253,7 @@ $(document).ready(function(){
                     <div class="content" id="addkotakCentang">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut biru">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -302,7 +302,7 @@ $(document).ready(function(){
                     <div class="content" id="addpetakkotakCentang">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut nila">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -366,7 +366,7 @@ $(document).ready(function(){
                     <div class="content" id="adddropDown">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut ungu">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -415,7 +415,7 @@ $(document).ready(function(){
                     <div class="content" id="addTanggal">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut tosca">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -455,7 +455,7 @@ $(document).ready(function(){
                     <div class="content" id="addWaktu">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut cokelat">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -495,7 +495,7 @@ $(document).ready(function(){
                     <div class="content" id="addskalaLinier">
                         <div class="line"></div>
 
-                        <div class="nomor-urut">
+                        <div class="nomor-urut putih">
                             <label>No :</label>
                             <input type="number" name="number" class="input-nomor">
                         </div>
@@ -806,9 +806,3 @@ $(document).ready(function(){
         $(this).parents(".bungkus-content").find(".skala-b").text(va);
     });
 });
-
-function cekValue(){
-    let value = document.querySelector("input").value;
-    alert("Pesan : " + value);
-    
-}
