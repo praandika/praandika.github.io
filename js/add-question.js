@@ -73,7 +73,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </div>
-                    <button class="tombol-md tmb-utama bunder fadeInBawah">Simpan</button>
+                    <button class="execute tombol-md tmb-utama bunder fadeInBawah">Simpan</button>
                 </div>
                 
             `).hide().fadeIn();
@@ -804,5 +804,16 @@ $(document).ready(function(){
         let va = $(this).val();
         console.log(va);
         $(this).parents(".bungkus-content").find(".skala-b").text(va);
+    });
+});
+
+// Cek space
+$(document).ready(function(){
+    $("body").on("click",".execute", function(){
+        let cek = $("input:text").val();
+        let space = cek.slice(0,1);
+        if (space === " ") {
+            alert(`Input tidak boleh kosong!`);
+        }
     });
 });
