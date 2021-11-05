@@ -52,6 +52,10 @@ a{
 }
 /* END Responsive slide kanan kiri */
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 /* Input untuk dark theme */
 input{
     background-color: transparent;
